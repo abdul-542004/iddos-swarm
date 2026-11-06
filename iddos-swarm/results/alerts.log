@@ -1,0 +1,11 @@
+# detector started 2026-11-07T03:06:36  service=app_web
+# thresholds: restarts>=2/120s, unhealthy>=2/120s
+2026-11-07T03:07:08  CRITICAL INDIRECT-DOS       app_web health=unhealthy but internal /work returns 200 (app logic ALIVE). Cause: dependency latency slowing /health, NOT an application crash.
+2026-11-07T03:07:44  CRITICAL INDIRECT-DOS       app_web health=unhealthy but internal /work returns 200 (app logic ALIVE). Cause: dependency latency slowing /health, NOT an application crash.
+2026-11-07T03:07:44  CRITICAL HEALTH-FLAP        app_web went unhealthy 2x in 120s (health flapping).
+2026-11-07T03:07:51  CRITICAL RESTART-STORM      app_web restarted 2x in 120s (threshold 2). Cause: task unavailable.
+2026-11-07T03:08:13  CRITICAL RESTART-STORM      app_web restarted 2x in 120s (threshold 2). Cause: dependency latency (internal /work still 200, app alive).
+2026-11-07T03:08:18  CRITICAL INDIRECT-DOS       app_web health=unhealthy but internal /work returns 200 (app logic ALIVE). Cause: dependency latency slowing /health, NOT an application crash.
+2026-11-07T03:08:18  CRITICAL HEALTH-FLAP        app_web went unhealthy 3x in 120s (health flapping).
+2026-11-07T03:08:35  CRITICAL RESTART-STORM      app_web restarted 3x in 120s (threshold 2). Cause: dependency latency (internal /work still 200, app alive).
+2026-11-07T03:08:57  CRITICAL RESTART-STORM      app_web restarted 3x in 120s (threshold 2). Cause: dependency latency (internal /work still 200, app alive).
