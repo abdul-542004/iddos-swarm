@@ -1,0 +1,78 @@
+# stack/observability.yml — OPTIONAL live dashboard layer (Prometheus + Grafana).
+#
+# It is ADDITIVE: it only adds two services and joins the same overlay network,
+# so you MERGE it onto an app stack with a second -c flag (no duplication, and
+# the vulnerable/mitigated stacks stay untouched):
+#
+#   docker stack deploy -c stack/vulnerable.yml -c stack/observability.yml app
+#   docker stack deploy -c stack/mitigated.yml  -c stack/observability.yml app
+#
+# Then open:
+#   Grafana     http://localhost:3000   (anonymous admin, dashboard auto-loaded)
+#   Prometheus  http://localhost:9090
+#
+# No cAdvisor: the web app exposes /metrics (prometheus-client), and
+# process_start_time_seconds + up=0 gaps make restarts visible on their own.
+version: "3.8"
+
+services:
+  prometheus:
+    image: prom/prometheus:v2.54.1
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.retention.time=1h"
+    configs:
+      - source: prometheus_config
+        target: /etc/prometheus/prometheus.yml
+    ports:
+      - target: 9090
+        published: 9090
+        protocol: tcp
+        mode: ingress
+    networks:
+      - iddosnet
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+  grafana:
+    image: grafana/grafana:11.2.0
+    environment:
+      # Anonymous admin + no login form: the demo opens straight to the board.
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: "Admin"
+      GF_AUTH_DISABLE_LOGIN_FORM: "true"
+      GF_USERS_DEFAULT_THEME: "light"
+    configs:
+      - source: grafana_datasource
+        target: /etc/grafana/provisioning/datasources/datasource.yml
+      - source: grafana_dashprovider
+        target: /etc/grafana/provisioning/dashboards/dashboards.yml
+      - source: grafana_dashboard
+        target: /var/lib/grafana/dashboards/iddos.json
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+        mode: ingress
+    networks:
+      - iddosnet
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+networks:
+  iddosnet:
+    driver: overlay
+
+configs:
+  prometheus_config:
+    file: ./prometheus.yml
+  grafana_datasource:
+    file: ./grafana-datasource.yml
+  grafana_dashprovider:
+    file: ./grafana-dashboards.yml
+  grafana_dashboard:
+    file: ./grafana-dashboard-iddos.json

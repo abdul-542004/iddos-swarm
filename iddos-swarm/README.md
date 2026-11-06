@@ -66,6 +66,32 @@ Use the clean `stack/mitigated.yml` for the Step 6 before/after comparison;
 `mitigated-plus.yml` is only for demonstrating the extra layers. Evidence:
 `results/defense_in_depth_proof.txt`.
 
+### Optional live dashboard: Grafana (lean, no cAdvisor)
+
+`stack/observability.yml` adds **Prometheus + Grafana** only. It is *additive*:
+merge it onto any app stack with a second `-c` flag (the app stacks are not
+changed). The web app exposes `/metrics` (via `prometheus-client`); restarts
+show up on their own through `process_start_time_seconds` and `up=0` gaps, so
+no cAdvisor is needed.
+
+```bash
+# vulnerable stack + dashboard (watch the storm live):
+docker stack deploy -c stack/vulnerable.yml -c stack/observability.yml app
+# mitigated stack + dashboard (watch it stay flat):
+docker stack deploy -c stack/mitigated.yml  -c stack/observability.yml app
+```
+
+Then open:
+
+- **Grafana** http://localhost:3000 — anonymous admin, dashboard
+  "IDDoS — Health-Check Restart Storm" auto-loaded (web UP with red restart
+  gaps, restart count, `/work` rate, health pass/fail, DB probe p95).
+- **Prometheus** http://localhost:9090
+
+This is a presentation aid. The graded evidence stays the detector, the
+`results/metrics.csv`, and the matplotlib charts; keep a screen recording of
+the dashboard as a demo fallback.
+
 ## Quick start (Steps 0–1, done)
 
 ```bash

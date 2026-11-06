@@ -1,0 +1,17 @@
+# Prometheus scrape config for the iddos lab.
+# Scrapes the web service's /metrics every 5s. With a single replica the
+# service VIP has exactly one backend, so when Swarm restarts the task the
+# scrape fails (up=0) and the restart storm is visible on the dashboard.
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: iddos-web
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["web:8000"]
+
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]

@@ -31,7 +31,8 @@ import threading
 import time
 
 import psycopg2
-from flask import Flask, jsonify
+from flask import Flask, Response, jsonify
+from prometheus_client import CONTENT_TYPE_LATEST, Counter, Histogram, generate_latest
 
 # --- Configuration (all from environment, with safe local defaults) ---------
 DB_HOST = os.environ.get("DB_HOST", "toxiproxy")
@@ -65,6 +66,19 @@ app = Flask(__name__)
 
 # Count /work calls so the "real work" is visibly doing something.
 _work_counter = 0
+
+# --- Prometheus metrics (scraped at /metrics by Prometheus -> Grafana) -------
+# These feed the optional live dashboard. prometheus_client also exposes
+# process_start_time_seconds for free: it jumps whenever Swarm restarts the
+# container, so the restart storm shows up on the dashboard without cAdvisor.
+WORK_TOTAL = Counter("iddos_work_requests_total", "GET /work requests")
+HEALTH_TOTAL = Counter("iddos_health_checks_total",
+                       "GET /health results", ["result"])
+READY_TOTAL = Counter("iddos_ready_checks_total",
+                      "GET /ready results", ["result"])
+DB_PROBE_SECONDS = Histogram(
+    "iddos_db_probe_seconds", "Database probe duration (seconds)",
+    buckets=(0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2, 3, 5, 10))
 
 
 def _check_database():
@@ -166,6 +180,7 @@ def work():
     """Real app work. No database. Proves the app is alive and correct."""
     global _work_counter
     _work_counter += 1
+    WORK_TOTAL.inc()
     # A tiny bit of deterministic "work" so the endpoint is not a no-op.
     result = sum(i * i for i in range(1000))
     log.info("WORK ok n=%d result=%d", _work_counter, result)
@@ -176,9 +191,12 @@ def work():
 def health():
     """Vulnerable health-check: healthy only if the database answers in time."""
     ok, elapsed_ms, detail = _check_database()
+    DB_PROBE_SECONDS.observe(elapsed_ms / 1000.0)
     if ok:
+        HEALTH_TOTAL.labels(result="pass").inc()
         log.info("HEALTH pass db_ms=%.1f", elapsed_ms)
         return jsonify(status="healthy", db_ms=round(elapsed_ms, 1)), 200
+    HEALTH_TOTAL.labels(result="fail").inc()
     log.warning("HEALTH fail db_ms=%.1f detail=%s", elapsed_ms, detail)
     return (
         jsonify(status="unhealthy", db_ms=round(elapsed_ms, 1), detail=detail),
@@ -211,8 +229,10 @@ def ready():
     """
     ok, elapsed_ms, detail, breaker = _check_database_guarded()
     if ok:
+        READY_TOTAL.labels(result="ready").inc()
         log.info("READY ok db_ms=%.1f breaker=%s", elapsed_ms, breaker)
         return jsonify(status="ready", db_ms=round(elapsed_ms, 1), breaker=breaker), 200
+    READY_TOTAL.labels(result="not_ready").inc()
     log.warning("READY not-ready db_ms=%.1f breaker=%s detail=%s",
                 elapsed_ms, breaker, detail)
     return (
@@ -222,11 +242,17 @@ def ready():
     )
 
 
+@app.get("/metrics")
+def metrics():
+    """Prometheus scrape endpoint (feeds the optional Grafana dashboard)."""
+    return Response(generate_latest(), mimetype=CONTENT_TYPE_LATEST)
+
+
 @app.get("/")
 def index():
     return jsonify(
         service="iddos-app",
-        endpoints=["/work", "/health", "/healthz", "/ready"],
+        endpoints=["/work", "/health", "/healthz", "/ready", "/metrics"],
         db_target=f"{DB_HOST}:{DB_PORT}",
         db_timeout_s=DB_TIMEOUT,
     ), 200
