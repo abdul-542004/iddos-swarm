@@ -1,0 +1,126 @@
+# stack/mitigated-plus.yml — mitigated stack PLUS defence-in-depth (Step 5
+# optional layers). It is stack/mitigated.yml with two extras:
+#
+#   * The app's /ready DB check is guarded by a CIRCUIT BREAKER (built into
+#     iddos-app:fixed; tuned here via env). After repeated slow DB calls the
+#     breaker opens and /ready fails fast instead of hanging.
+#   * A reverse proxy (proxy, HAProxy) health-checks the web service on /ready
+#     and routes traffic only to ready instances. When the database is slow the
+#     instance leaves the rotation (clients get a fast 503 from the proxy) but
+#     is NOT killed — Swarm liveness (/healthz) keeps it running.
+#
+# The clean core-fix stack is stack/mitigated.yml; use THAT for the Step 6
+# before/after comparison. This file demonstrates the optional extra layers.
+#
+# Deploy from the iddos-swarm/ directory:
+#   docker stack deploy -c stack/mitigated-plus.yml app
+#
+# Ports:  :8000 web (direct)   :8080 proxy (readiness-gated)   :8474 toxiproxy
+version: "3.8"
+
+services:
+  web:
+    image: iddos-app:fixed
+    environment:
+      DB_HOST: toxiproxy
+      DB_PORT: "5432"
+      DB_NAME: iddos
+      DB_USER: iddos
+      DB_PASSWORD: iddos
+      DB_TIMEOUT: "2"
+      APP_PORT: "8000"
+      # Circuit breaker: open after 3 consecutive DB failures, retry after 15s.
+      CB_FAIL_THRESHOLD: "3"
+      CB_RESET_TIMEOUT_S: "15"
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+        mode: ingress
+    networks:
+      - iddosnet
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/healthz', timeout=3).status==200 else 1)"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 3
+        window: 60s
+      update_config:
+        order: stop-first
+
+  # Reverse proxy: routes only to /ready instances; de-routes without killing.
+  proxy:
+    image: haproxy:2.9-alpine
+    configs:
+      - source: haproxy_config
+        target: /usr/local/etc/haproxy/haproxy.cfg
+    ports:
+      - target: 80
+        published: 8080
+        protocol: tcp
+        mode: ingress
+    networks:
+      - iddosnet
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: iddos
+      POSTGRES_USER: iddos
+      POSTGRES_PASSWORD: iddos
+    networks:
+      - iddosnet
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U iddos -d iddos"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+  toxiproxy:
+    image: ghcr.io/shopify/toxiproxy:2.9.0
+    command: ["-host=0.0.0.0", "-config=/toxiproxy.json"]
+    configs:
+      - source: toxiproxy_config
+        target: /toxiproxy.json
+    ports:
+      - target: 8474
+        published: 8474
+        protocol: tcp
+        mode: ingress
+    networks:
+      - iddosnet
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+networks:
+  iddosnet:
+    driver: overlay
+
+volumes:
+  dbdata:
+
+configs:
+  toxiproxy_config:
+    file: ./toxiproxy.json
+  haproxy_config:
+    file: ./haproxy.cfg

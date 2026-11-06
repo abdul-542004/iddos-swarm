@@ -53,6 +53,19 @@ Steps 1, 2, and 4 can overlap once the vulnerable stack exists. Keep the attack,
 mitigation, and measurement steps in order — each uses the result of the one
 before it.
 
+### Optional defence-in-depth (Step 5 extra)
+
+`stack/mitigated-plus.yml` adds two optional layers on top of the core fix:
+
+- a **circuit breaker** around the DB call, so `/ready` fails fast (≈10 ms)
+  instead of hanging for `DB_TIMEOUT` once the database is repeatedly slow;
+- a **reverse proxy** (`proxy`, HAProxy on `:8080`) that health-checks the web
+  service on `/ready` and de-routes a slow instance **without killing it**.
+
+Use the clean `stack/mitigated.yml` for the Step 6 before/after comparison;
+`mitigated-plus.yml` is only for demonstrating the extra layers. Evidence:
+`results/defense_in_depth_proof.txt`.
+
 ## Quick start (Steps 0–1, done)
 
 ```bash

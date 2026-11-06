@@ -1,0 +1,36 @@
+Defence-in-depth under latency (mitigated-plus: circuit breaker + HAProxy readiness)
+Generated 2026-11-07T03:36:38
+
+--- add 5000ms latency toxic ---
+toxic added
+
+1) CIRCUIT BREAKER: repeated /ready calls (direct :8000)
+   watch db_ms + breaker: closed(slow ~2s) -> open(fail-fast <50ms)
+   call 1: {"breaker":"closed","db_ms":2004.2,"detail":"OperationalError: connection to server at \"toxiproxy\" (10.0.1.9), port 5432 failed: timeout expired","status":"not-ready"}
+  [2.012123s]
+   call 2: {"breaker":"open","db_ms":2006.9,"detail":"OperationalError: connection to server at \"toxiproxy\" (10.0.1.9), port 5432 failed: timeout expired","status":"not-ready"}
+  [2.014954s]
+   call 3: {"breaker":"open","db_ms":0.0,"detail":"circuit_open: failing fast, database marked bad","status":"not-ready"}
+  [0.009804s]
+   call 4: {"breaker":"open","db_ms":0.0,"detail":"circuit_open: failing fast, database marked bad","status":"not-ready"}
+  [0.007575s]
+   call 5: {"breaker":"open","db_ms":0.0,"detail":"circuit_open: failing fast, database marked bad","status":"not-ready"}
+  [0.008567s]
+   call 6: {"breaker":"open","db_ms":0.0,"detail":"circuit_open: failing fast, database marked bad","status":"not-ready"}
+  [0.007836s]
+
+2) READINESS DE-ROUTING: give HAProxy a few seconds to mark backend down
+   HAProxy backend health: DOWN
+   proxy  :8080 /work -> HTTP 503 in 0.007632s  (de-routed, fast 503)
+   direct :8000 /work -> HTTP 200 in 0.008883s  (app alive, liveness keeps it up)
+   direct :8000 /healthz -> HTTP 200  (liveness never fails)
+
+3) CONTAINER NOT KILLED:
+iddos-app:fixed  Up About a minute (healthy)
+   web shutdown tasks = 0
+
+--- remove toxic (recovery) ---
+ATTACK OFF toxic 'latency_downstream' removed from proxy 'postgres'
+   HAProxy backend health: UP
+   /ready breaker now: ready breaker=closed
+   proxy :8080 /work -> HTTP 200 (routing restored)

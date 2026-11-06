@@ -27,6 +27,7 @@ indirect denial-of-service (a slow dependency), not an application crash.
 
 import logging
 import os
+import threading
 import time
 
 import psycopg2
@@ -44,6 +45,13 @@ DB_PASSWORD = os.environ.get("DB_PASSWORD", "iddos")
 # it, which is exactly the vulnerability being demonstrated.
 DB_TIMEOUT = float(os.environ.get("DB_TIMEOUT", "2"))
 APP_PORT = int(os.environ.get("APP_PORT", "8000"))
+
+# Circuit-breaker config (defence-in-depth, Step 5 optional). After
+# CB_FAIL_THRESHOLD consecutive DB failures the breaker OPENS and /ready fails
+# fast (no DB call, no hang) until CB_RESET_TIMEOUT_S passes, then it tries one
+# probe (half-open) before closing again.
+CB_FAIL_THRESHOLD = int(os.environ.get("CB_FAIL_THRESHOLD", "3"))
+CB_RESET_TIMEOUT_S = float(os.environ.get("CB_RESET_TIMEOUT_S", "15"))
 
 # --- Logging: one clear line per request, with timestamps -------------------
 logging.basicConfig(
@@ -95,6 +103,64 @@ def _check_database():
                 pass
 
 
+class CircuitBreaker:
+    """Minimal thread-safe circuit breaker (closed -> open -> half-open).
+
+    While OPEN it short-circuits the protected call so the caller fails fast
+    instead of waiting on a slow dependency every time.
+    """
+
+    def __init__(self, threshold, reset_timeout):
+        self.threshold = threshold
+        self.reset_timeout = reset_timeout
+        self.failures = 0
+        self.state = "closed"
+        self.opened_at = 0.0
+        self.lock = threading.Lock()
+
+    def allow(self):
+        """Return (allowed, state): may the protected call run right now?"""
+        with self.lock:
+            if self.state == "open":
+                if time.monotonic() - self.opened_at >= self.reset_timeout:
+                    self.state = "half-open"   # let a single trial through
+                    return True, "half-open"
+                return False, "open"
+            return True, self.state
+
+    def record_success(self):
+        with self.lock:
+            self.failures = 0
+            self.state = "closed"
+
+    def record_failure(self):
+        with self.lock:
+            self.failures += 1
+            if self.state == "half-open" or self.failures >= self.threshold:
+                self.state = "open"
+                self.opened_at = time.monotonic()
+
+
+db_breaker = CircuitBreaker(CB_FAIL_THRESHOLD, CB_RESET_TIMEOUT_S)
+
+
+def _check_database_guarded():
+    """DB check behind the circuit breaker (used by /ready).
+
+    Returns (ok, elapsed_ms, detail, breaker_state). When the breaker is open
+    it returns immediately (fail fast) without calling the database at all.
+    """
+    allowed, state = db_breaker.allow()
+    if not allowed:
+        return False, 0.0, "circuit_open: failing fast, database marked bad", state
+    ok, elapsed_ms, detail = _check_database()
+    if ok:
+        db_breaker.record_success()
+    else:
+        db_breaker.record_failure()
+    return ok, elapsed_ms, detail, db_breaker.state
+
+
 @app.get("/work")
 def work():
     """Real app work. No database. Proves the app is alive and correct."""
@@ -138,14 +204,20 @@ def ready():
     A reverse proxy can use /ready to pull a slow instance OUT of the traffic
     rotation without killing it. When the database is slow the service reports
     "not ready" (503) but stays up; liveness (/healthz) keeps it running.
+
+    The DB check is guarded by a circuit breaker: after repeated slow calls the
+    breaker opens and /ready returns immediately (fail fast) instead of hanging
+    for DB_TIMEOUT on every request.
     """
-    ok, elapsed_ms, detail = _check_database()
+    ok, elapsed_ms, detail, breaker = _check_database_guarded()
     if ok:
-        log.info("READY ok db_ms=%.1f", elapsed_ms)
-        return jsonify(status="ready", db_ms=round(elapsed_ms, 1)), 200
-    log.warning("READY not-ready db_ms=%.1f detail=%s", elapsed_ms, detail)
+        log.info("READY ok db_ms=%.1f breaker=%s", elapsed_ms, breaker)
+        return jsonify(status="ready", db_ms=round(elapsed_ms, 1), breaker=breaker), 200
+    log.warning("READY not-ready db_ms=%.1f breaker=%s detail=%s",
+                elapsed_ms, breaker, detail)
     return (
-        jsonify(status="not-ready", db_ms=round(elapsed_ms, 1), detail=detail),
+        jsonify(status="not-ready", db_ms=round(elapsed_ms, 1),
+                breaker=breaker, detail=detail),
         503,
     )
 
