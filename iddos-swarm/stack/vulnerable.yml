@@ -1,0 +1,111 @@
+# stack/vulnerable.yml — the VULNERABLE Swarm stack.
+#
+# Three services on one overlay network:
+#   web        the victim (iddos-app:vuln). Its health-check probes /health,
+#              which depends on the database. This is the vulnerable coupling.
+#   db         PostgreSQL, the dependency.
+#   toxiproxy  sits BETWEEN web and db. The app connects to the database only
+#              through Toxiproxy (DB_HOST=toxiproxy), so the attack can slow the
+#              database path without ever touching the web container.
+#
+# Two settings make this stack vulnerable (stated clearly, per the plan):
+#   1. The HEALTHCHECK depends on the database (via /health).
+#   2. restart_policy has NO max_attempts, so restarts can loop without end.
+#
+# Deploy from the iddos-swarm/ directory:
+#   docker stack deploy -c stack/vulnerable.yml app
+version: "3.8"
+
+services:
+  # --------------------------------------------------------------------------
+  web:
+    image: iddos-app:vuln
+    environment:
+      # The app reaches the database THROUGH Toxiproxy, never directly.
+      DB_HOST: toxiproxy
+      DB_PORT: "5432"
+      DB_NAME: iddos
+      DB_USER: iddos
+      DB_PASSWORD: iddos
+      DB_TIMEOUT: "2"
+      APP_PORT: "8000"
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+        mode: ingress
+    networks:
+      - iddosnet
+    # VULNERABLE health-check: probes /health, which does a DB round-trip.
+    # Stated here explicitly (it mirrors the image's HEALTHCHECK) so the
+    # dependency coupling is visible in the stack file itself.
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/health', timeout=3).status==200 else 1)"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any      # restart on any exit/health failure
+        delay: 2s           # short delay => storms fast
+        window: 0s
+        # NO max_attempts  => restarts are UNBOUNDED (the vulnerability)
+      update_config:
+        order: stop-first
+
+  # --------------------------------------------------------------------------
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: iddos
+      POSTGRES_USER: iddos
+      POSTGRES_PASSWORD: iddos
+    networks:
+      - iddosnet
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U iddos -d iddos"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+  # --------------------------------------------------------------------------
+  toxiproxy:
+    image: ghcr.io/shopify/toxiproxy:2.9.0
+    # Load the web->db proxy at start-up (listen :5432 -> upstream db:5432).
+    command: ["-host=0.0.0.0", "-config=/toxiproxy.json"]
+    configs:
+      - source: toxiproxy_config
+        target: /toxiproxy.json
+    ports:
+      # Expose the Toxiproxy control API so the Step 3 attack script (on the
+      # host) can add/remove the latency toxic.
+      - target: 8474
+        published: 8474
+        protocol: tcp
+        mode: ingress
+    networks:
+      - iddosnet
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+networks:
+  iddosnet:
+    driver: overlay
+
+volumes:
+  dbdata:
+
+configs:
+  toxiproxy_config:
+    file: ./toxiproxy.json
