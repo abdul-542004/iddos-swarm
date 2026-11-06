@@ -1,0 +1,2 @@
+# detector started 2026-11-07T03:45:58  service=app_web
+# thresholds: restarts>=2/120s, unhealthy>=2/120s

@@ -1,0 +1,4 @@
+scenario,stack,attack,availability_pct,restart_count,mttr_s,ttd_s,lat_avg_ms,lat_p95_ms,samples
+baseline,vulnerable,no,100.0,0,,,13.6,31.0,219
+vulnerable_attack,vulnerable,yes,21.0,2,13.0,17.7,15.0,32.0,424
+mitigated_attack,mitigated,yes,100.0,0,0.2,,15.0,31.0,440
