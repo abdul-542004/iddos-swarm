@@ -1,0 +1,12 @@
+Attack evidence summary  (2026-11-07T02:57:13)
+latency toxic = 5000 ms   phases(s): baseline=15 attack=120 recovery=45
+
+phase      availability%     ok/total
+baseline          100.0%        32/32
+attack             15.8%       38/241
+recovery           98.9%        89/90
+
+web restart count (replaced tasks) at end = 3
+
+Signature signal: during the attack /work stays available in
+app logs while /health fails -> indirect DoS, not a crash.

@@ -1,0 +1,512 @@
+app_web.1@docker-desktop    |  * Serving Flask app 'app'
+app_web.1@docker-desktop    |  * Debug mode: off
+app_web.1@docker-desktop    |  * Serving Flask app 'app'
+app_web.1@docker-desktop    |  * Debug mode: off
+app_web.1@docker-desktop    |  * Serving Flask app 'app'
+app_web.1@docker-desktop    |  * Debug mode: off
+app_web.1@docker-desktop    |  * Serving Flask app 'app'
+app_web.1@docker-desktop    |  * Debug mode: off
+app_web.1@docker-desktop    | 2026-11-06T21:50:04 INFO starting iddos-app port=8000 db=toxiproxy:5432 timeout=2.0s
+app_web.1@docker-desktop    | 2026-11-06T21:50:04 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+app_web.1@docker-desktop    |  * Running on all addresses (0.0.0.0)
+app_web.1@docker-desktop    |  * Running on http://127.0.0.1:8000
+app_web.1@docker-desktop    |  * Running on http://172.18.0.3:8000
+app_web.1@docker-desktop    | 2026-11-06T21:50:04 INFO [33mPress CTRL+C to quit[0m
+app_web.1@docker-desktop    | 2026-11-06T21:50:09 INFO HEALTH pass db_ms=12.2
+app_web.1@docker-desktop    | 2026-11-06T21:50:09 INFO 127.0.0.1 - - [06/Nov/2026 21:50:09] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:14 INFO HEALTH pass db_ms=7.8
+app_web.1@docker-desktop    | 2026-11-06T21:50:14 INFO 127.0.0.1 - - [06/Nov/2026 21:50:14] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:19 INFO HEALTH pass db_ms=7.0
+app_web.1@docker-desktop    | 2026-11-06T21:50:19 INFO 127.0.0.1 - - [06/Nov/2026 21:50:19] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:24 INFO HEALTH pass db_ms=7.1
+app_web.1@docker-desktop    | 2026-11-06T21:55:30 INFO starting iddos-app port=8000 db=toxiproxy:5432 timeout=2.0s
+app_web.1@docker-desktop    | 2026-11-06T21:50:24 INFO 127.0.0.1 - - [06/Nov/2026 21:50:24] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:29 INFO HEALTH pass db_ms=7.9
+app_web.1@docker-desktop    | 2026-11-06T21:50:29 INFO 127.0.0.1 - - [06/Nov/2026 21:50:29] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO HEALTH pass db_ms=6.9
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO 127.0.0.1 - - [06/Nov/2026 21:50:34] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO WORK ok n=1 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:55:30 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO 10.0.0.2 - - [06/Nov/2026 21:50:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    |  * Running on all addresses (0.0.0.0)
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO WORK ok n=2 result=332833500
+app_web.1@docker-desktop    |  * Running on http://127.0.0.1:8000
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO 10.0.0.2 - - [06/Nov/2026 21:50:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    |  * Running on http://172.18.0.3:8000
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO HEALTH pass db_ms=6.5
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO 10.0.0.2 - - [06/Nov/2026 21:50:34] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO HEALTH pass db_ms=6.9
+app_web.1@docker-desktop    | 2026-11-06T21:50:34 INFO 10.0.0.2 - - [06/Nov/2026 21:50:34] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:39 INFO HEALTH pass db_ms=7.8
+app_web.1@docker-desktop    | 2026-11-06T21:50:39 INFO 127.0.0.1 - - [06/Nov/2026 21:50:39] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:44 INFO HEALTH pass db_ms=12.2
+app_web.1@docker-desktop    | 2026-11-06T21:50:44 INFO 127.0.0.1 - - [06/Nov/2026 21:50:44] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:50 INFO HEALTH pass db_ms=7.9
+app_web.1@docker-desktop    | 2026-11-06T21:56:04 INFO starting iddos-app port=8000 db=toxiproxy:5432 timeout=2.0s
+app_web.1@docker-desktop    | 2026-11-06T21:50:50 INFO 127.0.0.1 - - [06/Nov/2026 21:50:50] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:50:55 INFO HEALTH pass db_ms=7.0
+app_web.1@docker-desktop    | 2026-11-06T21:55:30 INFO [33mPress CTRL+C to quit[0m
+app_web.1@docker-desktop    | 2026-11-06T21:50:55 INFO 127.0.0.1 - - [06/Nov/2026 21:50:55] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:04 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+app_web.1@docker-desktop    | 2026-11-06T21:55:37 WARNING HEALTH fail db_ms=2003.5 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    |  * Running on all addresses (0.0.0.0)
+app_web.1@docker-desktop    | 2026-11-06T21:51:00 INFO HEALTH pass db_ms=7.6
+app_web.1@docker-desktop    | 2026-11-06T21:55:37 INFO 127.0.0.1 - - [06/Nov/2026 21:55:37] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:00 INFO 127.0.0.1 - - [06/Nov/2026 21:51:00] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:05 INFO HEALTH pass db_ms=7.7
+app_web.1@docker-desktop    | 2026-11-06T21:55:42 WARNING HEALTH fail db_ms=2002.7 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:51:05 INFO 127.0.0.1 - - [06/Nov/2026 21:51:05] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:55:42 INFO 127.0.0.1 - - [06/Nov/2026 21:55:42] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:10 INFO HEALTH pass db_ms=8.1
+app_web.1@docker-desktop    | 2026-11-06T21:55:49 WARNING HEALTH fail db_ms=2002.0 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:55:49 INFO 127.0.0.1 - - [06/Nov/2026 21:55:49] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:55:56 WARNING HEALTH fail db_ms=2003.2 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:55:56 INFO 127.0.0.1 - - [06/Nov/2026 21:55:56] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    |  * Running on http://127.0.0.1:8000
+app_web.1@docker-desktop    |  * Running on http://172.18.0.3:8000
+app_web.1@docker-desktop    | 2026-11-06T21:56:04 INFO [33mPress CTRL+C to quit[0m
+app_web.1@docker-desktop    | 2026-11-06T21:56:11 WARNING HEALTH fail db_ms=2004.2 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:56:11 INFO 127.0.0.1 - - [06/Nov/2026 21:56:11] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:16 WARNING HEALTH fail db_ms=2003.3 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:56:16 INFO 127.0.0.1 - - [06/Nov/2026 21:56:16] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:23 WARNING HEALTH fail db_ms=2003.5 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:56:23 INFO 127.0.0.1 - - [06/Nov/2026 21:56:23] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:28 INFO HEALTH pass db_ms=11.8
+app_web.1@docker-desktop    | 2026-11-06T21:56:28 INFO 127.0.0.1 - - [06/Nov/2026 21:56:28] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:28 INFO WORK ok n=1 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:28 INFO 10.0.0.2 - - [06/Nov/2026 21:56:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:29 INFO WORK ok n=2 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:29 INFO 10.0.0.2 - - [06/Nov/2026 21:56:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:29 INFO WORK ok n=3 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:29 INFO 10.0.0.2 - - [06/Nov/2026 21:56:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:30 INFO WORK ok n=4 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:30 INFO 10.0.0.2 - - [06/Nov/2026 21:56:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:30 INFO WORK ok n=5 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:30 INFO 10.0.0.2 - - [06/Nov/2026 21:56:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:31 INFO WORK ok n=6 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:31 INFO 10.0.0.2 - - [06/Nov/2026 21:56:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:31 INFO WORK ok n=7 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:31 INFO 10.0.0.2 - - [06/Nov/2026 21:56:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:32 INFO WORK ok n=8 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:32 INFO 10.0.0.2 - - [06/Nov/2026 21:56:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:32 INFO WORK ok n=9 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:32 INFO 10.0.0.2 - - [06/Nov/2026 21:56:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:33 INFO WORK ok n=10 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:33 INFO 10.0.0.2 - - [06/Nov/2026 21:56:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:33 INFO HEALTH pass db_ms=8.5
+app_web.1@docker-desktop    | 2026-11-06T21:56:33 INFO 127.0.0.1 - - [06/Nov/2026 21:56:33] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:33 INFO WORK ok n=11 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:33 INFO 10.0.0.2 - - [06/Nov/2026 21:56:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:34 INFO WORK ok n=12 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:34 INFO 10.0.0.2 - - [06/Nov/2026 21:56:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:34 INFO WORK ok n=13 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:34 INFO 10.0.0.2 - - [06/Nov/2026 21:56:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:35 INFO WORK ok n=14 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:35 INFO 10.0.0.2 - - [06/Nov/2026 21:56:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:35 INFO WORK ok n=15 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:54 INFO starting iddos-app port=8000 db=toxiproxy:5432 timeout=2.0s
+app_web.1@docker-desktop    | 2026-11-06T21:54:54 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+app_web.1@docker-desktop    |  * Running on all addresses (0.0.0.0)
+app_web.1@docker-desktop    |  * Running on http://127.0.0.1:8000
+app_web.1@docker-desktop    |  * Running on http://172.18.0.3:8000
+app_web.1@docker-desktop    | 2026-11-06T21:54:54 INFO [33mPress CTRL+C to quit[0m
+app_web.1@docker-desktop    | 2026-11-06T21:55:01 WARNING HEALTH fail db_ms=2005.6 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:55:01 INFO 127.0.0.1 - - [06/Nov/2026 21:55:01] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:55:06 WARNING HEALTH fail db_ms=2003.4 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:55:06 INFO 127.0.0.1 - - [06/Nov/2026 21:55:06] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:55:13 WARNING HEALTH fail db_ms=2002.8 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:55:13 INFO 127.0.0.1 - - [06/Nov/2026 21:55:13] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:55:20 WARNING HEALTH fail db_ms=2003.3 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:55:20 INFO 127.0.0.1 - - [06/Nov/2026 21:55:20] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:10 INFO 127.0.0.1 - - [06/Nov/2026 21:51:10] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:35 INFO 10.0.0.2 - - [06/Nov/2026 21:56:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:36 INFO WORK ok n=16 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:36 INFO 10.0.0.2 - - [06/Nov/2026 21:56:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:15 INFO HEALTH pass db_ms=6.9
+app_web.1@docker-desktop    | 2026-11-06T21:56:36 INFO WORK ok n=17 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:51:15 INFO 127.0.0.1 - - [06/Nov/2026 21:51:15] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:36 INFO 10.0.0.2 - - [06/Nov/2026 21:56:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:37 INFO WORK ok n=18 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:51:20 INFO HEALTH pass db_ms=8.2
+app_web.1@docker-desktop    | 2026-11-06T21:56:37 INFO 10.0.0.2 - - [06/Nov/2026 21:56:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:37 INFO WORK ok n=19 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:51:20 INFO 127.0.0.1 - - [06/Nov/2026 21:51:20] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:37 INFO 10.0.0.2 - - [06/Nov/2026 21:56:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:25 INFO HEALTH pass db_ms=9.6
+app_web.1@docker-desktop    | 2026-11-06T21:56:38 INFO WORK ok n=20 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:51:25 INFO 127.0.0.1 - - [06/Nov/2026 21:51:25] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:38 INFO 10.0.0.2 - - [06/Nov/2026 21:56:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:31 INFO HEALTH pass db_ms=12.4
+app_web.1@docker-desktop    | 2026-11-06T21:56:38 INFO HEALTH pass db_ms=7.3
+app_web.1@docker-desktop    | 2026-11-06T21:51:31 INFO 127.0.0.1 - - [06/Nov/2026 21:51:31] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:38 INFO 127.0.0.1 - - [06/Nov/2026 21:56:38] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:36 INFO HEALTH pass db_ms=10.0
+app_web.1@docker-desktop    | 2026-11-06T21:51:36 INFO 127.0.0.1 - - [06/Nov/2026 21:51:36] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:41 INFO HEALTH pass db_ms=6.8
+app_web.1@docker-desktop    | 2026-11-06T21:51:41 INFO 127.0.0.1 - - [06/Nov/2026 21:51:41] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:46 INFO HEALTH pass db_ms=7.8
+app_web.1@docker-desktop    | 2026-11-06T21:51:46 INFO 127.0.0.1 - - [06/Nov/2026 21:51:46] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:51 INFO HEALTH pass db_ms=26.6
+app_web.1@docker-desktop    | 2026-11-06T21:56:38 INFO WORK ok n=21 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:51:51 INFO 127.0.0.1 - - [06/Nov/2026 21:51:51] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:38 INFO 10.0.0.2 - - [06/Nov/2026 21:56:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:51:56 INFO HEALTH pass db_ms=7.2
+app_web.1@docker-desktop    | 2026-11-06T21:56:39 INFO WORK ok n=22 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:51:56 INFO 127.0.0.1 - - [06/Nov/2026 21:51:56] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:39 INFO 10.0.0.2 - - [06/Nov/2026 21:56:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:01 INFO HEALTH pass db_ms=7.1
+app_web.1@docker-desktop    | 2026-11-06T21:56:39 INFO WORK ok n=23 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:52:01 INFO 127.0.0.1 - - [06/Nov/2026 21:52:01] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:06 INFO HEALTH pass db_ms=8.7
+app_web.1@docker-desktop    | 2026-11-06T21:52:06 INFO 127.0.0.1 - - [06/Nov/2026 21:52:06] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:12 INFO HEALTH pass db_ms=10.0
+app_web.1@docker-desktop    | 2026-11-06T21:52:12 INFO 127.0.0.1 - - [06/Nov/2026 21:52:12] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:17 INFO HEALTH pass db_ms=7.1
+app_web.1@docker-desktop    | 2026-11-06T21:52:17 INFO 127.0.0.1 - - [06/Nov/2026 21:52:17] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:22 INFO HEALTH pass db_ms=6.9
+app_web.1@docker-desktop    | 2026-11-06T21:52:22 INFO 127.0.0.1 - - [06/Nov/2026 21:52:22] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:27 INFO HEALTH pass db_ms=6.6
+app_web.1@docker-desktop    | 2026-11-06T21:52:27 INFO 127.0.0.1 - - [06/Nov/2026 21:52:27] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:32 INFO HEALTH pass db_ms=6.9
+app_web.1@docker-desktop    | 2026-11-06T21:52:32 INFO 127.0.0.1 - - [06/Nov/2026 21:52:32] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:37 INFO HEALTH pass db_ms=7.3
+app_web.1@docker-desktop    | 2026-11-06T21:52:37 INFO 127.0.0.1 - - [06/Nov/2026 21:52:37] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:42 INFO HEALTH pass db_ms=7.0
+app_web.1@docker-desktop    | 2026-11-06T21:52:42 INFO 127.0.0.1 - - [06/Nov/2026 21:52:42] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:47 INFO HEALTH pass db_ms=6.8
+app_web.1@docker-desktop    | 2026-11-06T21:52:47 INFO 127.0.0.1 - - [06/Nov/2026 21:52:47] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:52 INFO HEALTH pass db_ms=7.1
+app_web.1@docker-desktop    | 2026-11-06T21:56:39 INFO 10.0.0.2 - - [06/Nov/2026 21:56:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:40 INFO WORK ok n=24 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:40 INFO 10.0.0.2 - - [06/Nov/2026 21:56:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:40 INFO WORK ok n=25 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:40 INFO 10.0.0.2 - - [06/Nov/2026 21:56:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:41 INFO WORK ok n=26 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:41 INFO 10.0.0.2 - - [06/Nov/2026 21:56:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:41 INFO WORK ok n=27 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:41 INFO 10.0.0.2 - - [06/Nov/2026 21:56:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:42 INFO WORK ok n=28 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:42 INFO 10.0.0.2 - - [06/Nov/2026 21:56:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:42 INFO WORK ok n=29 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:42 INFO 10.0.0.2 - - [06/Nov/2026 21:56:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:43 INFO WORK ok n=30 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:52:52 INFO 127.0.0.1 - - [06/Nov/2026 21:52:52] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:43 INFO 10.0.0.2 - - [06/Nov/2026 21:56:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:52:58 INFO HEALTH pass db_ms=7.0
+app_web.1@docker-desktop    | 2026-11-06T21:52:58 INFO 127.0.0.1 - - [06/Nov/2026 21:52:58] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:43 INFO WORK ok n=31 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:53:03 INFO HEALTH pass db_ms=6.8
+app_web.1@docker-desktop    | 2026-11-06T21:53:03 INFO 127.0.0.1 - - [06/Nov/2026 21:53:03] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:43 INFO 10.0.0.2 - - [06/Nov/2026 21:56:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:08 INFO HEALTH pass db_ms=6.6
+app_web.1@docker-desktop    | 2026-11-06T21:56:43 INFO HEALTH pass db_ms=7.0
+app_web.1@docker-desktop    | 2026-11-06T21:53:08 INFO 127.0.0.1 - - [06/Nov/2026 21:53:08] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:43 INFO 127.0.0.1 - - [06/Nov/2026 21:56:43] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:10 WARNING HEALTH fail db_ms=2003.2 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:56:44 INFO WORK ok n=32 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:53:10 INFO 10.0.0.2 - - [06/Nov/2026 21:53:10] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:44 INFO 10.0.0.2 - - [06/Nov/2026 21:56:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:10 INFO WORK ok n=3 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:44 INFO WORK ok n=33 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:53:10 INFO 10.0.0.2 - - [06/Nov/2026 21:53:10] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:44 INFO 10.0.0.2 - - [06/Nov/2026 21:56:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:13 INFO HEALTH pass db_ms=6.8
+app_web.1@docker-desktop    | 2026-11-06T21:56:45 INFO WORK ok n=34 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:53:13 INFO 10.0.0.2 - - [06/Nov/2026 21:53:13] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:45 INFO 10.0.0.2 - - [06/Nov/2026 21:56:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:45 INFO WORK ok n=35 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:53:13 INFO HEALTH pass db_ms=6.7
+app_web.1@docker-desktop    | 2026-11-06T21:53:13 INFO 127.0.0.1 - - [06/Nov/2026 21:53:13] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:18 INFO HEALTH pass db_ms=6.5
+app_web.1@docker-desktop    | 2026-11-06T21:53:18 INFO 127.0.0.1 - - [06/Nov/2026 21:53:18] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:23 INFO HEALTH pass db_ms=7.0
+app_web.1@docker-desktop    | 2026-11-06T21:53:23 INFO 127.0.0.1 - - [06/Nov/2026 21:53:23] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:28 INFO HEALTH pass db_ms=6.3
+app_web.1@docker-desktop    | 2026-11-06T21:53:28 INFO 127.0.0.1 - - [06/Nov/2026 21:53:28] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:33 INFO HEALTH pass db_ms=6.6
+app_web.1@docker-desktop    | 2026-11-06T21:53:33 INFO 127.0.0.1 - - [06/Nov/2026 21:53:33] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:38 INFO HEALTH pass db_ms=6.8
+app_web.1@docker-desktop    | 2026-11-06T21:53:38 INFO 127.0.0.1 - - [06/Nov/2026 21:53:38] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:43 INFO HEALTH pass db_ms=8.2
+app_web.1@docker-desktop    | 2026-11-06T21:53:43 INFO 127.0.0.1 - - [06/Nov/2026 21:53:43] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:49 INFO HEALTH pass db_ms=6.7
+app_web.1@docker-desktop    | 2026-11-06T21:53:49 INFO 127.0.0.1 - - [06/Nov/2026 21:53:49] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:54 INFO HEALTH pass db_ms=10.5
+app_web.1@docker-desktop    | 2026-11-06T21:53:54 INFO 127.0.0.1 - - [06/Nov/2026 21:53:54] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:53:59 INFO HEALTH pass db_ms=7.8
+app_web.1@docker-desktop    | 2026-11-06T21:53:59 INFO 127.0.0.1 - - [06/Nov/2026 21:53:59] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:45 INFO 10.0.0.2 - - [06/Nov/2026 21:56:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:04 INFO HEALTH pass db_ms=6.7
+app_web.1@docker-desktop    | 2026-11-06T21:56:46 INFO WORK ok n=36 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:04 INFO 127.0.0.1 - - [06/Nov/2026 21:54:04] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:46 INFO 10.0.0.2 - - [06/Nov/2026 21:56:46] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:09 INFO HEALTH pass db_ms=10.3
+app_web.1@docker-desktop    | 2026-11-06T21:54:09 INFO 127.0.0.1 - - [06/Nov/2026 21:54:09] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:46 INFO WORK ok n=37 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:46 INFO 10.0.0.2 - - [06/Nov/2026 21:56:46] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:11 INFO WORK ok n=4 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:47 INFO WORK ok n=38 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:11 INFO 10.0.0.2 - - [06/Nov/2026 21:54:11] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:47 INFO 10.0.0.2 - - [06/Nov/2026 21:56:47] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:12 INFO WORK ok n=5 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:47 INFO WORK ok n=39 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:12 INFO 10.0.0.2 - - [06/Nov/2026 21:54:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:47 INFO 10.0.0.2 - - [06/Nov/2026 21:56:47] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:12 INFO WORK ok n=6 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:12 INFO 10.0.0.2 - - [06/Nov/2026 21:54:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:48 INFO WORK ok n=40 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:48 INFO 10.0.0.2 - - [06/Nov/2026 21:56:48] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:13 INFO WORK ok n=7 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:48 INFO WORK ok n=41 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:13 INFO 10.0.0.2 - - [06/Nov/2026 21:54:13] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:48 INFO 10.0.0.2 - - [06/Nov/2026 21:56:48] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:13 INFO WORK ok n=8 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:48 INFO HEALTH pass db_ms=8.4
+app_web.1@docker-desktop    | 2026-11-06T21:56:48 INFO 127.0.0.1 - - [06/Nov/2026 21:56:48] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:49 INFO WORK ok n=42 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:49 INFO 10.0.0.2 - - [06/Nov/2026 21:56:49] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:49 INFO WORK ok n=43 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:49 INFO 10.0.0.2 - - [06/Nov/2026 21:56:49] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:50 INFO WORK ok n=44 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:50 INFO 10.0.0.2 - - [06/Nov/2026 21:56:50] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:50 INFO WORK ok n=45 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:50 INFO 10.0.0.2 - - [06/Nov/2026 21:56:50] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:51 INFO WORK ok n=46 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:51 INFO 10.0.0.2 - - [06/Nov/2026 21:56:51] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:51 INFO WORK ok n=47 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:51 INFO 10.0.0.2 - - [06/Nov/2026 21:56:51] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:52 INFO WORK ok n=48 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:52 INFO 10.0.0.2 - - [06/Nov/2026 21:56:52] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:52 INFO WORK ok n=49 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:52 INFO 10.0.0.2 - - [06/Nov/2026 21:56:52] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:53 INFO WORK ok n=50 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:53 INFO 10.0.0.2 - - [06/Nov/2026 21:56:53] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:53 INFO WORK ok n=51 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:53 INFO 10.0.0.2 - - [06/Nov/2026 21:56:53] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:54 INFO HEALTH pass db_ms=6.8
+app_web.1@docker-desktop    | 2026-11-06T21:56:54 INFO 127.0.0.1 - - [06/Nov/2026 21:56:54] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:54 INFO WORK ok n=52 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:54 INFO 10.0.0.2 - - [06/Nov/2026 21:56:54] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:54 INFO WORK ok n=53 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:54 INFO 10.0.0.2 - - [06/Nov/2026 21:56:54] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:55 INFO WORK ok n=54 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:55 INFO 10.0.0.2 - - [06/Nov/2026 21:56:55] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:55 INFO WORK ok n=55 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:55 INFO 10.0.0.2 - - [06/Nov/2026 21:56:55] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:56 INFO WORK ok n=56 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:56 INFO 10.0.0.2 - - [06/Nov/2026 21:56:56] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:13 INFO 10.0.0.2 - - [06/Nov/2026 21:54:13] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:56 INFO WORK ok n=57 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:56 INFO 10.0.0.2 - - [06/Nov/2026 21:56:56] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:14 INFO WORK ok n=9 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:57 INFO WORK ok n=58 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:14 INFO 10.0.0.2 - - [06/Nov/2026 21:54:14] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:57 INFO 10.0.0.2 - - [06/Nov/2026 21:56:57] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:57 INFO WORK ok n=59 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:57 INFO 10.0.0.2 - - [06/Nov/2026 21:56:57] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:58 INFO WORK ok n=60 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:58 INFO 10.0.0.2 - - [06/Nov/2026 21:56:58] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:58 INFO WORK ok n=61 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:58 INFO 10.0.0.2 - - [06/Nov/2026 21:56:58] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:59 INFO HEALTH pass db_ms=7.3
+app_web.1@docker-desktop    | 2026-11-06T21:56:59 INFO 127.0.0.1 - - [06/Nov/2026 21:56:59] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:59 INFO WORK ok n=62 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:59 INFO 10.0.0.2 - - [06/Nov/2026 21:56:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:56:59 INFO WORK ok n=63 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:56:59 INFO 10.0.0.2 - - [06/Nov/2026 21:56:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:00 INFO WORK ok n=64 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:00 INFO 10.0.0.2 - - [06/Nov/2026 21:57:00] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:00 INFO WORK ok n=65 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:00 INFO 10.0.0.2 - - [06/Nov/2026 21:57:00] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:01 INFO WORK ok n=66 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:01 INFO 10.0.0.2 - - [06/Nov/2026 21:57:01] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:14 INFO HEALTH pass db_ms=43.4
+app_web.1@docker-desktop    | 2026-11-06T21:57:01 INFO WORK ok n=67 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:01 INFO 10.0.0.2 - - [06/Nov/2026 21:57:01] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:14 INFO 127.0.0.1 - - [06/Nov/2026 21:54:14] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:14 INFO WORK ok n=10 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:14 INFO 10.0.0.2 - - [06/Nov/2026 21:54:14] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:15 INFO WORK ok n=11 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:15 INFO 10.0.0.2 - - [06/Nov/2026 21:54:15] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:15 INFO WORK ok n=12 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:02 INFO WORK ok n=68 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:15 INFO 10.0.0.2 - - [06/Nov/2026 21:54:15] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:16 INFO WORK ok n=13 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:02 INFO 10.0.0.2 - - [06/Nov/2026 21:57:02] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:02 INFO WORK ok n=69 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:16 INFO 10.0.0.2 - - [06/Nov/2026 21:54:16] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:02 INFO 10.0.0.2 - - [06/Nov/2026 21:57:02] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:16 INFO WORK ok n=14 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:03 INFO WORK ok n=70 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:16 INFO 10.0.0.2 - - [06/Nov/2026 21:54:16] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:03 INFO 10.0.0.2 - - [06/Nov/2026 21:57:03] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:17 INFO WORK ok n=15 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:03 INFO WORK ok n=71 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:17 INFO 10.0.0.2 - - [06/Nov/2026 21:54:17] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:03 INFO 10.0.0.2 - - [06/Nov/2026 21:57:03] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:17 INFO WORK ok n=16 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:04 INFO HEALTH pass db_ms=7.1
+app_web.1@docker-desktop    | 2026-11-06T21:54:17 INFO 10.0.0.2 - - [06/Nov/2026 21:54:17] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:04 INFO 127.0.0.1 - - [06/Nov/2026 21:57:04] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:04 INFO WORK ok n=72 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:04 INFO 10.0.0.2 - - [06/Nov/2026 21:57:04] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:04 INFO WORK ok n=73 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:04 INFO 10.0.0.2 - - [06/Nov/2026 21:57:04] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:05 INFO WORK ok n=74 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:05 INFO 10.0.0.2 - - [06/Nov/2026 21:57:05] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:05 INFO WORK ok n=75 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:05 INFO 10.0.0.2 - - [06/Nov/2026 21:57:05] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:18 INFO WORK ok n=17 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:06 INFO WORK ok n=76 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:18 INFO 10.0.0.2 - - [06/Nov/2026 21:54:18] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:06 INFO 10.0.0.2 - - [06/Nov/2026 21:57:06] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:18 INFO WORK ok n=18 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:06 INFO WORK ok n=77 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:18 INFO 10.0.0.2 - - [06/Nov/2026 21:54:18] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:19 INFO WORK ok n=19 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:19 INFO 10.0.0.2 - - [06/Nov/2026 21:54:19] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:19 INFO WORK ok n=20 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:19 INFO 10.0.0.2 - - [06/Nov/2026 21:54:19] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:19 INFO HEALTH pass db_ms=6.9
+app_web.1@docker-desktop    | 2026-11-06T21:54:19 INFO 127.0.0.1 - - [06/Nov/2026 21:54:19] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:06 INFO 10.0.0.2 - - [06/Nov/2026 21:57:06] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:20 INFO WORK ok n=21 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:20 INFO 10.0.0.2 - - [06/Nov/2026 21:54:20] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:20 INFO WORK ok n=22 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:20 INFO 10.0.0.2 - - [06/Nov/2026 21:54:20] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:21 INFO WORK ok n=23 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:07 INFO WORK ok n=78 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:07 INFO 10.0.0.2 - - [06/Nov/2026 21:57:07] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:07 INFO WORK ok n=79 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:07 INFO 10.0.0.2 - - [06/Nov/2026 21:57:07] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:08 INFO WORK ok n=80 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:08 INFO 10.0.0.2 - - [06/Nov/2026 21:57:08] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:08 INFO WORK ok n=81 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:08 INFO 10.0.0.2 - - [06/Nov/2026 21:57:08] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:09 INFO WORK ok n=82 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:09 INFO 10.0.0.2 - - [06/Nov/2026 21:57:09] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:09 INFO HEALTH pass db_ms=7.2
+app_web.1@docker-desktop    | 2026-11-06T21:54:21 INFO 10.0.0.2 - - [06/Nov/2026 21:54:21] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:09 INFO 127.0.0.1 - - [06/Nov/2026 21:57:09] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:09 INFO WORK ok n=83 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:09 INFO 10.0.0.2 - - [06/Nov/2026 21:57:09] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:10 INFO WORK ok n=84 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:10 INFO 10.0.0.2 - - [06/Nov/2026 21:57:10] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:21 INFO WORK ok n=24 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:10 INFO WORK ok n=85 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:21 INFO 10.0.0.2 - - [06/Nov/2026 21:54:21] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:10 INFO 10.0.0.2 - - [06/Nov/2026 21:57:10] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:22 INFO WORK ok n=25 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:22 INFO 10.0.0.2 - - [06/Nov/2026 21:54:22] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:22 INFO WORK ok n=26 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:11 INFO WORK ok n=86 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:11 INFO 10.0.0.2 - - [06/Nov/2026 21:57:11] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:11 INFO WORK ok n=87 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:11 INFO 10.0.0.2 - - [06/Nov/2026 21:57:11] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:12 INFO WORK ok n=88 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:57:12 INFO 10.0.0.2 - - [06/Nov/2026 21:57:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:12 INFO WORK ok n=89 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:22 INFO 10.0.0.2 - - [06/Nov/2026 21:54:22] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:57:12 INFO 10.0.0.2 - - [06/Nov/2026 21:57:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:23 INFO WORK ok n=27 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:23 INFO 10.0.0.2 - - [06/Nov/2026 21:54:23] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:23 INFO WORK ok n=28 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:23 INFO 10.0.0.2 - - [06/Nov/2026 21:54:23] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:24 INFO WORK ok n=29 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:24 INFO 10.0.0.2 - - [06/Nov/2026 21:54:24] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:24 INFO WORK ok n=30 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:24 INFO 10.0.0.2 - - [06/Nov/2026 21:54:24] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:24 INFO HEALTH pass db_ms=7.7
+app_web.1@docker-desktop    | 2026-11-06T21:54:24 INFO 127.0.0.1 - - [06/Nov/2026 21:54:24] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:25 INFO WORK ok n=31 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:25 INFO 10.0.0.2 - - [06/Nov/2026 21:54:25] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:25 INFO WORK ok n=32 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:25 INFO 10.0.0.2 - - [06/Nov/2026 21:54:25] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:26 INFO WORK ok n=33 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:26 INFO 10.0.0.2 - - [06/Nov/2026 21:54:26] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:26 INFO WORK ok n=34 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:26 INFO 10.0.0.2 - - [06/Nov/2026 21:54:26] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:27 INFO WORK ok n=35 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:27 INFO 10.0.0.2 - - [06/Nov/2026 21:54:27] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:27 INFO WORK ok n=36 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:27 INFO 10.0.0.2 - - [06/Nov/2026 21:54:27] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:28 INFO WORK ok n=37 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:28 INFO 10.0.0.2 - - [06/Nov/2026 21:54:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:28 INFO WORK ok n=38 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:28 INFO 10.0.0.2 - - [06/Nov/2026 21:54:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:29 INFO WORK ok n=39 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:29 INFO 10.0.0.2 - - [06/Nov/2026 21:54:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:29 INFO WORK ok n=40 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:29 INFO 10.0.0.2 - - [06/Nov/2026 21:54:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:30 INFO WORK ok n=41 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:30 INFO 10.0.0.2 - - [06/Nov/2026 21:54:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:30 INFO WORK ok n=42 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:30 INFO 10.0.0.2 - - [06/Nov/2026 21:54:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:31 INFO WORK ok n=43 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:31 INFO 10.0.0.2 - - [06/Nov/2026 21:54:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:31 INFO WORK ok n=44 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:31 INFO 10.0.0.2 - - [06/Nov/2026 21:54:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:32 WARNING HEALTH fail db_ms=2003.6 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:54:32 INFO 127.0.0.1 - - [06/Nov/2026 21:54:32] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:32 INFO WORK ok n=45 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:32 INFO 10.0.0.2 - - [06/Nov/2026 21:54:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:32 INFO WORK ok n=46 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:32 INFO 10.0.0.2 - - [06/Nov/2026 21:54:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:33 INFO WORK ok n=47 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:33 INFO 10.0.0.2 - - [06/Nov/2026 21:54:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:33 INFO WORK ok n=48 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:33 INFO 10.0.0.2 - - [06/Nov/2026 21:54:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:34 INFO WORK ok n=49 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:34 INFO 10.0.0.2 - - [06/Nov/2026 21:54:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:34 INFO WORK ok n=50 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:34 INFO 10.0.0.2 - - [06/Nov/2026 21:54:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:35 INFO WORK ok n=51 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:35 INFO 10.0.0.2 - - [06/Nov/2026 21:54:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:35 INFO WORK ok n=52 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:35 INFO 10.0.0.2 - - [06/Nov/2026 21:54:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:36 INFO WORK ok n=53 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:36 INFO 10.0.0.2 - - [06/Nov/2026 21:54:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:36 INFO WORK ok n=54 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:36 INFO 10.0.0.2 - - [06/Nov/2026 21:54:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:37 INFO WORK ok n=55 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:37 INFO 10.0.0.2 - - [06/Nov/2026 21:54:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:37 INFO WORK ok n=56 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:37 INFO 10.0.0.2 - - [06/Nov/2026 21:54:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:38 INFO WORK ok n=57 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:38 INFO 10.0.0.2 - - [06/Nov/2026 21:54:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:38 INFO WORK ok n=58 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:38 INFO 10.0.0.2 - - [06/Nov/2026 21:54:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:39 WARNING HEALTH fail db_ms=2002.4 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:54:39 INFO 127.0.0.1 - - [06/Nov/2026 21:54:39] "[35m[1mGET /health HTTP/1.1[0m" 503 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:39 INFO WORK ok n=59 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:39 INFO 10.0.0.2 - - [06/Nov/2026 21:54:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:39 INFO WORK ok n=60 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:39 INFO 10.0.0.2 - - [06/Nov/2026 21:54:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:40 INFO WORK ok n=61 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:40 INFO 10.0.0.2 - - [06/Nov/2026 21:54:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:40 INFO WORK ok n=62 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:40 INFO 10.0.0.2 - - [06/Nov/2026 21:54:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:41 INFO WORK ok n=63 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:41 INFO 10.0.0.2 - - [06/Nov/2026 21:54:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:41 INFO WORK ok n=64 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:41 INFO 10.0.0.2 - - [06/Nov/2026 21:54:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:42 INFO WORK ok n=65 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:42 INFO 10.0.0.2 - - [06/Nov/2026 21:54:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:42 INFO WORK ok n=66 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:42 INFO 10.0.0.2 - - [06/Nov/2026 21:54:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:43 INFO WORK ok n=67 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:43 INFO 10.0.0.2 - - [06/Nov/2026 21:54:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:43 INFO WORK ok n=68 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:43 INFO 10.0.0.2 - - [06/Nov/2026 21:54:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:44 INFO WORK ok n=69 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:44 INFO 10.0.0.2 - - [06/Nov/2026 21:54:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:44 INFO WORK ok n=70 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:44 INFO 10.0.0.2 - - [06/Nov/2026 21:54:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:45 INFO WORK ok n=71 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:45 INFO 10.0.0.2 - - [06/Nov/2026 21:54:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:45 INFO WORK ok n=72 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:45 INFO 10.0.0.2 - - [06/Nov/2026 21:54:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:46 INFO WORK ok n=73 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T21:54:46 INFO 10.0.0.2 - - [06/Nov/2026 21:54:46] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T21:54:46 WARNING HEALTH fail db_ms=2004.1 detail=OperationalError: connection to server at "toxiproxy" (10.0.1.7), port 5432 failed: timeout expired
+app_web.1@docker-desktop    | 2026-11-06T21:54:46 INFO 127.0.0.1 - - [06/Nov/2026 21:54:46] "[35m[1mGET /health HTTP/1.1[0m" 503 -
