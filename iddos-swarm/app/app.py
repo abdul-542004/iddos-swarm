@@ -1,15 +1,24 @@
 """iddos-app — dummy victim web service.
 
-Two deliberately separate endpoints:
+Endpoints:
 
   GET /work    Does real application work and returns 200. It does NOT touch
                the database. This proves the app logic is alive and correct.
 
-  GET /health  The *vulnerable* health-check. It opens a fresh database
-               connection THROUGH Toxiproxy and runs `SELECT 1`. It returns
-               200 only if the database answers within DB_TIMEOUT seconds.
-               When Toxiproxy injects latency, this call times out and the
-               endpoint returns 503 — even though /work is still fine.
+  GET /health  The *vulnerable* health-check (used by the vulnerable stack).
+               It opens a fresh database connection THROUGH Toxiproxy and runs
+               `SELECT 1`. It returns 200 only if the database answers within
+               DB_TIMEOUT seconds. Under injected latency it times out and
+               returns 503 — even though /work is still fine.
+
+  GET /healthz The MITIGATED LIVENESS probe (Step 5). Local-only: it confirms
+               the process answers and does NOT touch the database, so a slow
+               dependency can no longer fail the container health-check.
+
+  GET /ready   The MITIGATED READINESS probe (Step 5). Depends on the database
+               so a reverse proxy can de-route a slow instance WITHOUT killing
+               it. The same code serves both the vulnerable and fixed images;
+               only the Dockerfile HEALTHCHECK target differs.
 
 The log is the evidence for the "signature signal" the detector looks for:
 app work succeeds while the health-check fails. That divergence means an
@@ -111,11 +120,41 @@ def health():
     )
 
 
+@app.get("/healthz")
+def healthz():
+    """Local-only LIVENESS probe (the Step 5 fix).
+
+    It only confirms the process can answer HTTP. It does NOT touch the
+    database, so a slow dependency can no longer fail the container
+    health-check, and Swarm no longer kills a perfectly alive container.
+    """
+    return jsonify(status="alive"), 200
+
+
+@app.get("/ready")
+def ready():
+    """READINESS probe: depends on the database.
+
+    A reverse proxy can use /ready to pull a slow instance OUT of the traffic
+    rotation without killing it. When the database is slow the service reports
+    "not ready" (503) but stays up; liveness (/healthz) keeps it running.
+    """
+    ok, elapsed_ms, detail = _check_database()
+    if ok:
+        log.info("READY ok db_ms=%.1f", elapsed_ms)
+        return jsonify(status="ready", db_ms=round(elapsed_ms, 1)), 200
+    log.warning("READY not-ready db_ms=%.1f detail=%s", elapsed_ms, detail)
+    return (
+        jsonify(status="not-ready", db_ms=round(elapsed_ms, 1), detail=detail),
+        503,
+    )
+
+
 @app.get("/")
 def index():
     return jsonify(
         service="iddos-app",
-        endpoints=["/work", "/health"],
+        endpoints=["/work", "/health", "/healthz", "/ready"],
         db_target=f"{DB_HOST}:{DB_PORT}",
         db_timeout_s=DB_TIMEOUT,
     ), 200

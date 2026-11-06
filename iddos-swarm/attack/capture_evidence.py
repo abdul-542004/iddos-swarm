@@ -128,14 +128,20 @@ def run_phase(name, seconds, sampler, snap_fp):
 def main():
     global BASELINE_S, ATTACK_S, RECOVERY_S
     args = sys.argv[1:]
-    if len(args) == 3:
-        BASELINE_S, ATTACK_S, RECOVERY_S = (int(a) for a in args)
+    # Usage: capture_evidence.py [baseline attack recovery] [label]
+    label = "attack"
+    nums = [a for a in args if a.isdigit()]
+    words = [a for a in args if not a.isdigit()]
+    if len(nums) == 3:
+        BASELINE_S, ATTACK_S, RECOVERY_S = (int(a) for a in nums)
+    if words:
+        label = words[0]
 
     os.makedirs(RESULTS, exist_ok=True)
-    snap_path = os.path.join(RESULTS, "stack_ps_attack.log")
-    csv_path = os.path.join(RESULTS, "availability_attack.csv")
-    logs_path = os.path.join(RESULTS, "app_web_logs.txt")
-    summary_path = os.path.join(RESULTS, "attack_summary.txt")
+    snap_path = os.path.join(RESULTS, f"stack_ps_{label}.log")
+    csv_path = os.path.join(RESULTS, f"availability_{label}.csv")
+    logs_path = os.path.join(RESULTS, f"app_web_logs_{label}.txt")
+    summary_path = os.path.join(RESULTS, f"{label}_summary.txt")
 
     sampler = Sampler()
     sampler.start()

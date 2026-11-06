@@ -1,0 +1,784 @@
+app_web.1@docker-desktop    |  * Serving Flask app 'app'
+app_web.1@docker-desktop    |  * Debug mode: off
+app_web.1@docker-desktop    | 2026-11-06T22:13:09 INFO starting iddos-app port=8000 db=toxiproxy:5432 timeout=2.0s
+app_web.1@docker-desktop    | 2026-11-06T22:13:09 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+app_web.1@docker-desktop    |  * Running on all addresses (0.0.0.0)
+app_web.1@docker-desktop    |  * Running on http://127.0.0.1:8000
+app_web.1@docker-desktop    |  * Running on http://172.18.0.5:8000
+app_web.1@docker-desktop    | 2026-11-06T22:13:09 INFO [33mPress CTRL+C to quit[0m
+app_web.1@docker-desktop    | 2026-11-06T22:13:14 INFO 127.0.0.1 - - [06/Nov/2026 22:13:14] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:19 INFO 127.0.0.1 - - [06/Nov/2026 22:13:19] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:24 INFO 127.0.0.1 - - [06/Nov/2026 22:13:24] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:28 INFO WORK ok n=1 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:13:28 INFO 10.0.0.2 - - [06/Nov/2026 22:13:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:28 INFO HEALTH pass db_ms=11.6
+app_web.1@docker-desktop    | 2026-11-06T22:13:28 INFO 10.0.0.2 - - [06/Nov/2026 22:13:28] "GET /health HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:28 INFO 10.0.0.2 - - [06/Nov/2026 22:13:28] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:28 INFO READY ok db_ms=7.8
+app_web.1@docker-desktop    | 2026-11-06T22:13:28 INFO 10.0.0.2 - - [06/Nov/2026 22:13:28] "GET /ready HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:29 INFO 127.0.0.1 - - [06/Nov/2026 22:13:29] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:34 INFO 127.0.0.1 - - [06/Nov/2026 22:13:34] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:39 INFO 127.0.0.1 - - [06/Nov/2026 22:13:39] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:44 INFO 127.0.0.1 - - [06/Nov/2026 22:13:44] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:49 INFO 127.0.0.1 - - [06/Nov/2026 22:13:49] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:54 INFO 127.0.0.1 - - [06/Nov/2026 22:13:54] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:58 INFO WORK ok n=2 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:13:58 INFO 10.0.0.2 - - [06/Nov/2026 22:13:58] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:59 INFO WORK ok n=3 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:13:59 INFO 10.0.0.2 - - [06/Nov/2026 22:13:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:13:59 INFO WORK ok n=4 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:13:59 INFO 10.0.0.2 - - [06/Nov/2026 22:13:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:00 INFO 127.0.0.1 - - [06/Nov/2026 22:14:00] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:00 INFO WORK ok n=5 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:00 INFO 10.0.0.2 - - [06/Nov/2026 22:14:00] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:00 INFO WORK ok n=6 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:00 INFO 10.0.0.2 - - [06/Nov/2026 22:14:00] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:01 INFO WORK ok n=7 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:01 INFO 10.0.0.2 - - [06/Nov/2026 22:14:01] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:01 INFO WORK ok n=8 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:01 INFO 10.0.0.2 - - [06/Nov/2026 22:14:01] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:02 INFO WORK ok n=9 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:02 INFO 10.0.0.2 - - [06/Nov/2026 22:14:02] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:02 INFO WORK ok n=10 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:02 INFO 10.0.0.2 - - [06/Nov/2026 22:14:02] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:03 INFO WORK ok n=11 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:03 INFO 10.0.0.2 - - [06/Nov/2026 22:14:03] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:03 INFO WORK ok n=12 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:03 INFO 10.0.0.2 - - [06/Nov/2026 22:14:03] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:04 INFO WORK ok n=13 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:04 INFO 10.0.0.2 - - [06/Nov/2026 22:14:04] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:04 INFO WORK ok n=14 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:04 INFO 10.0.0.2 - - [06/Nov/2026 22:14:04] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:05 INFO 127.0.0.1 - - [06/Nov/2026 22:14:05] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:05 INFO WORK ok n=15 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:05 INFO 10.0.0.2 - - [06/Nov/2026 22:14:05] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:05 INFO WORK ok n=16 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:05 INFO 10.0.0.2 - - [06/Nov/2026 22:14:05] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:06 INFO WORK ok n=17 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:06 INFO 10.0.0.2 - - [06/Nov/2026 22:14:06] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:07 INFO WORK ok n=18 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:07 INFO 10.0.0.2 - - [06/Nov/2026 22:14:07] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:07 INFO WORK ok n=19 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:07 INFO 10.0.0.2 - - [06/Nov/2026 22:14:07] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:08 INFO WORK ok n=20 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:08 INFO 10.0.0.2 - - [06/Nov/2026 22:14:08] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:08 INFO WORK ok n=21 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:08 INFO 10.0.0.2 - - [06/Nov/2026 22:14:08] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:09 INFO WORK ok n=22 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:09 INFO 10.0.0.2 - - [06/Nov/2026 22:14:09] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:09 INFO WORK ok n=23 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:09 INFO 10.0.0.2 - - [06/Nov/2026 22:14:09] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:10 INFO WORK ok n=24 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:10 INFO 10.0.0.2 - - [06/Nov/2026 22:14:10] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:10 INFO 127.0.0.1 - - [06/Nov/2026 22:14:10] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:10 INFO WORK ok n=25 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:10 INFO 10.0.0.2 - - [06/Nov/2026 22:14:10] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:11 INFO WORK ok n=26 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:11 INFO 10.0.0.2 - - [06/Nov/2026 22:14:11] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:11 INFO WORK ok n=27 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:11 INFO 10.0.0.2 - - [06/Nov/2026 22:14:11] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:12 INFO WORK ok n=28 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:12 INFO 10.0.0.2 - - [06/Nov/2026 22:14:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:12 INFO WORK ok n=29 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:12 INFO 10.0.0.2 - - [06/Nov/2026 22:14:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:13 INFO WORK ok n=30 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:13 INFO 10.0.0.2 - - [06/Nov/2026 22:14:13] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:13 INFO WORK ok n=31 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:13 INFO 10.0.0.2 - - [06/Nov/2026 22:14:13] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:14 INFO WORK ok n=32 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:14 INFO 10.0.0.2 - - [06/Nov/2026 22:14:14] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:14 INFO WORK ok n=33 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:14 INFO 10.0.0.2 - - [06/Nov/2026 22:14:14] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:15 INFO WORK ok n=34 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:15 INFO 10.0.0.2 - - [06/Nov/2026 22:14:15] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:15 INFO 127.0.0.1 - - [06/Nov/2026 22:14:15] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:15 INFO WORK ok n=35 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:15 INFO 10.0.0.2 - - [06/Nov/2026 22:14:15] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:16 INFO WORK ok n=36 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:16 INFO 10.0.0.2 - - [06/Nov/2026 22:14:16] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:16 INFO WORK ok n=37 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:16 INFO 10.0.0.2 - - [06/Nov/2026 22:14:16] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:17 INFO WORK ok n=38 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:17 INFO 10.0.0.2 - - [06/Nov/2026 22:14:17] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:17 INFO WORK ok n=39 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:17 INFO 10.0.0.2 - - [06/Nov/2026 22:14:17] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:18 INFO WORK ok n=40 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:18 INFO 10.0.0.2 - - [06/Nov/2026 22:14:18] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:18 INFO WORK ok n=41 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:18 INFO 10.0.0.2 - - [06/Nov/2026 22:14:18] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:19 INFO WORK ok n=42 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:19 INFO 10.0.0.2 - - [06/Nov/2026 22:14:19] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:19 INFO WORK ok n=43 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:19 INFO 10.0.0.2 - - [06/Nov/2026 22:14:19] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:20 INFO WORK ok n=44 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:20 INFO 10.0.0.2 - - [06/Nov/2026 22:14:20] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:20 INFO 127.0.0.1 - - [06/Nov/2026 22:14:20] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:20 INFO WORK ok n=45 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:20 INFO 10.0.0.2 - - [06/Nov/2026 22:14:20] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:21 INFO WORK ok n=46 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:21 INFO 10.0.0.2 - - [06/Nov/2026 22:14:21] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:21 INFO WORK ok n=47 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:21 INFO 10.0.0.2 - - [06/Nov/2026 22:14:21] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:22 INFO WORK ok n=48 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:22 INFO 10.0.0.2 - - [06/Nov/2026 22:14:22] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:22 INFO WORK ok n=49 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:22 INFO 10.0.0.2 - - [06/Nov/2026 22:14:22] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:23 INFO WORK ok n=50 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:23 INFO 10.0.0.2 - - [06/Nov/2026 22:14:23] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:23 INFO WORK ok n=51 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:23 INFO 10.0.0.2 - - [06/Nov/2026 22:14:23] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:24 INFO WORK ok n=52 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:24 INFO 10.0.0.2 - - [06/Nov/2026 22:14:24] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:24 INFO WORK ok n=53 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:24 INFO 10.0.0.2 - - [06/Nov/2026 22:14:24] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:25 INFO WORK ok n=54 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:25 INFO 10.0.0.2 - - [06/Nov/2026 22:14:25] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:25 INFO WORK ok n=55 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:25 INFO 10.0.0.2 - - [06/Nov/2026 22:14:25] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:25 INFO 127.0.0.1 - - [06/Nov/2026 22:14:25] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:26 INFO WORK ok n=56 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:26 INFO 10.0.0.2 - - [06/Nov/2026 22:14:26] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:26 INFO WORK ok n=57 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:26 INFO 10.0.0.2 - - [06/Nov/2026 22:14:26] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:27 INFO WORK ok n=58 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:27 INFO 10.0.0.2 - - [06/Nov/2026 22:14:27] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:27 INFO WORK ok n=59 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:27 INFO 10.0.0.2 - - [06/Nov/2026 22:14:27] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:28 INFO WORK ok n=60 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:28 INFO 10.0.0.2 - - [06/Nov/2026 22:14:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:28 INFO WORK ok n=61 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:28 INFO 10.0.0.2 - - [06/Nov/2026 22:14:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:29 INFO WORK ok n=62 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:29 INFO 10.0.0.2 - - [06/Nov/2026 22:14:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:29 INFO WORK ok n=63 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:29 INFO 10.0.0.2 - - [06/Nov/2026 22:14:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:30 INFO WORK ok n=64 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:30 INFO 10.0.0.2 - - [06/Nov/2026 22:14:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:30 INFO WORK ok n=65 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:30 INFO 10.0.0.2 - - [06/Nov/2026 22:14:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:30 INFO 127.0.0.1 - - [06/Nov/2026 22:14:30] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:31 INFO WORK ok n=66 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:31 INFO 10.0.0.2 - - [06/Nov/2026 22:14:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:31 INFO WORK ok n=67 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:31 INFO 10.0.0.2 - - [06/Nov/2026 22:14:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:32 INFO WORK ok n=68 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:32 INFO 10.0.0.2 - - [06/Nov/2026 22:14:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:32 INFO WORK ok n=69 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:32 INFO 10.0.0.2 - - [06/Nov/2026 22:14:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:33 INFO WORK ok n=70 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:33 INFO 10.0.0.2 - - [06/Nov/2026 22:14:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:33 INFO WORK ok n=71 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:33 INFO 10.0.0.2 - - [06/Nov/2026 22:14:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:34 INFO WORK ok n=72 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:34 INFO 10.0.0.2 - - [06/Nov/2026 22:14:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:34 INFO WORK ok n=73 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:34 INFO 10.0.0.2 - - [06/Nov/2026 22:14:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:35 INFO WORK ok n=74 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:35 INFO 10.0.0.2 - - [06/Nov/2026 22:14:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:35 INFO WORK ok n=75 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:35 INFO 10.0.0.2 - - [06/Nov/2026 22:14:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:35 INFO 127.0.0.1 - - [06/Nov/2026 22:14:35] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:36 INFO WORK ok n=76 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:36 INFO 10.0.0.2 - - [06/Nov/2026 22:14:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:36 INFO WORK ok n=77 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:36 INFO 10.0.0.2 - - [06/Nov/2026 22:14:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:37 INFO WORK ok n=78 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:37 INFO 10.0.0.2 - - [06/Nov/2026 22:14:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:37 INFO WORK ok n=79 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:37 INFO 10.0.0.2 - - [06/Nov/2026 22:14:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:38 INFO WORK ok n=80 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:38 INFO 10.0.0.2 - - [06/Nov/2026 22:14:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:38 INFO WORK ok n=81 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:38 INFO 10.0.0.2 - - [06/Nov/2026 22:14:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:39 INFO WORK ok n=82 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:39 INFO 10.0.0.2 - - [06/Nov/2026 22:14:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:39 INFO WORK ok n=83 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:39 INFO 10.0.0.2 - - [06/Nov/2026 22:14:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:40 INFO WORK ok n=84 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:40 INFO 10.0.0.2 - - [06/Nov/2026 22:14:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:40 INFO WORK ok n=85 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:40 INFO 10.0.0.2 - - [06/Nov/2026 22:14:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:40 INFO 127.0.0.1 - - [06/Nov/2026 22:14:40] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:41 INFO WORK ok n=86 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:41 INFO 10.0.0.2 - - [06/Nov/2026 22:14:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:41 INFO WORK ok n=87 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:41 INFO 10.0.0.2 - - [06/Nov/2026 22:14:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:42 INFO WORK ok n=88 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:42 INFO 10.0.0.2 - - [06/Nov/2026 22:14:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:42 INFO WORK ok n=89 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:42 INFO 10.0.0.2 - - [06/Nov/2026 22:14:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:43 INFO WORK ok n=90 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:43 INFO 10.0.0.2 - - [06/Nov/2026 22:14:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:43 INFO WORK ok n=91 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:43 INFO 10.0.0.2 - - [06/Nov/2026 22:14:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:44 INFO WORK ok n=92 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:44 INFO 10.0.0.2 - - [06/Nov/2026 22:14:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:44 INFO WORK ok n=93 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:44 INFO 10.0.0.2 - - [06/Nov/2026 22:14:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:45 INFO WORK ok n=94 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:45 INFO 10.0.0.2 - - [06/Nov/2026 22:14:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:45 INFO WORK ok n=95 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:45 INFO 10.0.0.2 - - [06/Nov/2026 22:14:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:45 INFO 127.0.0.1 - - [06/Nov/2026 22:14:45] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:46 INFO WORK ok n=96 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:46 INFO 10.0.0.2 - - [06/Nov/2026 22:14:46] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:46 INFO WORK ok n=97 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:46 INFO 10.0.0.2 - - [06/Nov/2026 22:14:46] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:47 INFO WORK ok n=98 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:47 INFO 10.0.0.2 - - [06/Nov/2026 22:14:47] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:47 INFO WORK ok n=99 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:47 INFO 10.0.0.2 - - [06/Nov/2026 22:14:47] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:48 INFO WORK ok n=100 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:48 INFO 10.0.0.2 - - [06/Nov/2026 22:14:48] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:48 INFO WORK ok n=101 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:48 INFO 10.0.0.2 - - [06/Nov/2026 22:14:48] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:49 INFO WORK ok n=102 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:49 INFO 10.0.0.2 - - [06/Nov/2026 22:14:49] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:49 INFO WORK ok n=103 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:49 INFO 10.0.0.2 - - [06/Nov/2026 22:14:49] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:50 INFO WORK ok n=104 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:50 INFO 10.0.0.2 - - [06/Nov/2026 22:14:50] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:50 INFO WORK ok n=105 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:50 INFO 10.0.0.2 - - [06/Nov/2026 22:14:50] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:51 INFO WORK ok n=106 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:51 INFO 10.0.0.2 - - [06/Nov/2026 22:14:51] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:51 INFO 127.0.0.1 - - [06/Nov/2026 22:14:51] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:51 INFO WORK ok n=107 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:51 INFO 10.0.0.2 - - [06/Nov/2026 22:14:51] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:52 INFO WORK ok n=108 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:52 INFO 10.0.0.2 - - [06/Nov/2026 22:14:52] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:52 INFO WORK ok n=109 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:52 INFO 10.0.0.2 - - [06/Nov/2026 22:14:52] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:53 INFO WORK ok n=110 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:53 INFO 10.0.0.2 - - [06/Nov/2026 22:14:53] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:53 INFO WORK ok n=111 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:53 INFO 10.0.0.2 - - [06/Nov/2026 22:14:53] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:54 INFO WORK ok n=112 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:54 INFO 10.0.0.2 - - [06/Nov/2026 22:14:54] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:54 INFO WORK ok n=113 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:54 INFO 10.0.0.2 - - [06/Nov/2026 22:14:54] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:55 INFO WORK ok n=114 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:55 INFO 10.0.0.2 - - [06/Nov/2026 22:14:55] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:55 INFO WORK ok n=115 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:55 INFO 10.0.0.2 - - [06/Nov/2026 22:14:55] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:56 INFO WORK ok n=116 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:56 INFO 10.0.0.2 - - [06/Nov/2026 22:14:56] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:56 INFO 127.0.0.1 - - [06/Nov/2026 22:14:56] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:56 INFO WORK ok n=117 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:56 INFO 10.0.0.2 - - [06/Nov/2026 22:14:56] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:57 INFO WORK ok n=118 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:57 INFO 10.0.0.2 - - [06/Nov/2026 22:14:57] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:57 INFO WORK ok n=119 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:57 INFO 10.0.0.2 - - [06/Nov/2026 22:14:57] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:58 INFO WORK ok n=120 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:58 INFO 10.0.0.2 - - [06/Nov/2026 22:14:58] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:58 INFO WORK ok n=121 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:58 INFO 10.0.0.2 - - [06/Nov/2026 22:14:58] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:59 INFO WORK ok n=122 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:59 INFO 10.0.0.2 - - [06/Nov/2026 22:14:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:14:59 INFO WORK ok n=123 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:14:59 INFO 10.0.0.2 - - [06/Nov/2026 22:14:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:00 INFO WORK ok n=124 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:00 INFO 10.0.0.2 - - [06/Nov/2026 22:15:00] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:00 INFO WORK ok n=125 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:00 INFO 10.0.0.2 - - [06/Nov/2026 22:15:00] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:01 INFO WORK ok n=126 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:01 INFO 10.0.0.2 - - [06/Nov/2026 22:15:01] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:01 INFO 127.0.0.1 - - [06/Nov/2026 22:15:01] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:01 INFO WORK ok n=127 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:01 INFO 10.0.0.2 - - [06/Nov/2026 22:15:01] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:02 INFO WORK ok n=128 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:02 INFO 10.0.0.2 - - [06/Nov/2026 22:15:02] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:02 INFO WORK ok n=129 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:02 INFO 10.0.0.2 - - [06/Nov/2026 22:15:02] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:03 INFO WORK ok n=130 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:03 INFO 10.0.0.2 - - [06/Nov/2026 22:15:03] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:03 INFO WORK ok n=131 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:03 INFO 10.0.0.2 - - [06/Nov/2026 22:15:03] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:04 INFO WORK ok n=132 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:04 INFO 10.0.0.2 - - [06/Nov/2026 22:15:04] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:04 INFO WORK ok n=133 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:04 INFO 10.0.0.2 - - [06/Nov/2026 22:15:04] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:05 INFO WORK ok n=134 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:05 INFO 10.0.0.2 - - [06/Nov/2026 22:15:05] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:05 INFO WORK ok n=135 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:05 INFO 10.0.0.2 - - [06/Nov/2026 22:15:05] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:06 INFO WORK ok n=136 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:06 INFO 10.0.0.2 - - [06/Nov/2026 22:15:06] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:06 INFO 127.0.0.1 - - [06/Nov/2026 22:15:06] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:06 INFO WORK ok n=137 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:06 INFO 10.0.0.2 - - [06/Nov/2026 22:15:06] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:07 INFO WORK ok n=138 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:07 INFO 10.0.0.2 - - [06/Nov/2026 22:15:07] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:07 INFO WORK ok n=139 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:07 INFO 10.0.0.2 - - [06/Nov/2026 22:15:07] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:08 INFO WORK ok n=140 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:08 INFO 10.0.0.2 - - [06/Nov/2026 22:15:08] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:08 INFO WORK ok n=141 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:08 INFO 10.0.0.2 - - [06/Nov/2026 22:15:08] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:09 INFO WORK ok n=142 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:09 INFO 10.0.0.2 - - [06/Nov/2026 22:15:09] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:09 INFO WORK ok n=143 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:09 INFO 10.0.0.2 - - [06/Nov/2026 22:15:09] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:10 INFO WORK ok n=144 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:10 INFO 10.0.0.2 - - [06/Nov/2026 22:15:10] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:10 INFO WORK ok n=145 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:10 INFO 10.0.0.2 - - [06/Nov/2026 22:15:10] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:11 INFO WORK ok n=146 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:11 INFO 10.0.0.2 - - [06/Nov/2026 22:15:11] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:11 INFO 127.0.0.1 - - [06/Nov/2026 22:15:11] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:11 INFO WORK ok n=147 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:11 INFO 10.0.0.2 - - [06/Nov/2026 22:15:11] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:12 INFO WORK ok n=148 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:12 INFO 10.0.0.2 - - [06/Nov/2026 22:15:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:12 INFO WORK ok n=149 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:12 INFO 10.0.0.2 - - [06/Nov/2026 22:15:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:13 INFO WORK ok n=150 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:13 INFO 10.0.0.2 - - [06/Nov/2026 22:15:13] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:13 INFO WORK ok n=151 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:13 INFO 10.0.0.2 - - [06/Nov/2026 22:15:13] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:14 INFO WORK ok n=152 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:14 INFO 10.0.0.2 - - [06/Nov/2026 22:15:14] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:14 INFO WORK ok n=153 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:14 INFO 10.0.0.2 - - [06/Nov/2026 22:15:14] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:15 INFO WORK ok n=154 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:15 INFO 10.0.0.2 - - [06/Nov/2026 22:15:15] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:15 INFO WORK ok n=155 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:15 INFO 10.0.0.2 - - [06/Nov/2026 22:15:15] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:16 INFO WORK ok n=156 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:16 INFO 10.0.0.2 - - [06/Nov/2026 22:15:16] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:16 INFO 127.0.0.1 - - [06/Nov/2026 22:15:16] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:16 INFO WORK ok n=157 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:16 INFO 10.0.0.2 - - [06/Nov/2026 22:15:16] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:17 INFO WORK ok n=158 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:17 INFO 10.0.0.2 - - [06/Nov/2026 22:15:17] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:17 INFO WORK ok n=159 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:17 INFO 10.0.0.2 - - [06/Nov/2026 22:15:17] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:18 INFO WORK ok n=160 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:18 INFO 10.0.0.2 - - [06/Nov/2026 22:15:18] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:18 INFO WORK ok n=161 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:18 INFO 10.0.0.2 - - [06/Nov/2026 22:15:18] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:19 INFO WORK ok n=162 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:19 INFO 10.0.0.2 - - [06/Nov/2026 22:15:19] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:19 INFO WORK ok n=163 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:19 INFO 10.0.0.2 - - [06/Nov/2026 22:15:19] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:20 INFO WORK ok n=164 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:20 INFO 10.0.0.2 - - [06/Nov/2026 22:15:20] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:20 INFO WORK ok n=165 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:20 INFO 10.0.0.2 - - [06/Nov/2026 22:15:20] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:21 INFO WORK ok n=166 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:21 INFO 10.0.0.2 - - [06/Nov/2026 22:15:21] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:21 INFO 127.0.0.1 - - [06/Nov/2026 22:15:21] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:21 INFO WORK ok n=167 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:21 INFO 10.0.0.2 - - [06/Nov/2026 22:15:21] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:22 INFO WORK ok n=168 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:22 INFO 10.0.0.2 - - [06/Nov/2026 22:15:22] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:22 INFO WORK ok n=169 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:22 INFO 10.0.0.2 - - [06/Nov/2026 22:15:22] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:23 INFO WORK ok n=170 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:23 INFO 10.0.0.2 - - [06/Nov/2026 22:15:23] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:23 INFO WORK ok n=171 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:23 INFO 10.0.0.2 - - [06/Nov/2026 22:15:23] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:24 INFO WORK ok n=172 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:24 INFO 10.0.0.2 - - [06/Nov/2026 22:15:24] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:24 INFO WORK ok n=173 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:24 INFO 10.0.0.2 - - [06/Nov/2026 22:15:24] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:25 INFO WORK ok n=174 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:25 INFO 10.0.0.2 - - [06/Nov/2026 22:15:25] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:25 INFO WORK ok n=175 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:25 INFO 10.0.0.2 - - [06/Nov/2026 22:15:25] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:26 INFO WORK ok n=176 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:26 INFO 10.0.0.2 - - [06/Nov/2026 22:15:26] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:26 INFO 127.0.0.1 - - [06/Nov/2026 22:15:26] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:26 INFO WORK ok n=177 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:26 INFO 10.0.0.2 - - [06/Nov/2026 22:15:26] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:27 INFO WORK ok n=178 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:27 INFO 10.0.0.2 - - [06/Nov/2026 22:15:27] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:27 INFO WORK ok n=179 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:27 INFO 10.0.0.2 - - [06/Nov/2026 22:15:27] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:28 INFO WORK ok n=180 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:28 INFO 10.0.0.2 - - [06/Nov/2026 22:15:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:28 INFO WORK ok n=181 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:28 INFO 10.0.0.2 - - [06/Nov/2026 22:15:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:29 INFO WORK ok n=182 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:29 INFO 10.0.0.2 - - [06/Nov/2026 22:15:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:29 INFO WORK ok n=183 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:29 INFO 10.0.0.2 - - [06/Nov/2026 22:15:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:30 INFO WORK ok n=184 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:30 INFO 10.0.0.2 - - [06/Nov/2026 22:15:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:30 INFO WORK ok n=185 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:30 INFO 10.0.0.2 - - [06/Nov/2026 22:15:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:31 INFO WORK ok n=186 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:31 INFO 10.0.0.2 - - [06/Nov/2026 22:15:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:31 INFO WORK ok n=187 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:31 INFO 10.0.0.2 - - [06/Nov/2026 22:15:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:31 INFO 127.0.0.1 - - [06/Nov/2026 22:15:31] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:32 INFO WORK ok n=188 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:32 INFO 10.0.0.2 - - [06/Nov/2026 22:15:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:32 INFO WORK ok n=189 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:32 INFO 10.0.0.2 - - [06/Nov/2026 22:15:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:33 INFO WORK ok n=190 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:33 INFO 10.0.0.2 - - [06/Nov/2026 22:15:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:33 INFO WORK ok n=191 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:33 INFO 10.0.0.2 - - [06/Nov/2026 22:15:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:34 INFO WORK ok n=192 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:34 INFO 10.0.0.2 - - [06/Nov/2026 22:15:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:34 INFO WORK ok n=193 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:34 INFO 10.0.0.2 - - [06/Nov/2026 22:15:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:35 INFO WORK ok n=194 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:35 INFO 10.0.0.2 - - [06/Nov/2026 22:15:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:35 INFO WORK ok n=195 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:35 INFO 10.0.0.2 - - [06/Nov/2026 22:15:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:36 INFO WORK ok n=196 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:36 INFO 10.0.0.2 - - [06/Nov/2026 22:15:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:36 INFO WORK ok n=197 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:36 INFO 10.0.0.2 - - [06/Nov/2026 22:15:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:37 INFO 127.0.0.1 - - [06/Nov/2026 22:15:37] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:37 INFO WORK ok n=198 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:37 INFO 10.0.0.2 - - [06/Nov/2026 22:15:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:37 INFO WORK ok n=199 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:37 INFO 10.0.0.2 - - [06/Nov/2026 22:15:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:38 INFO WORK ok n=200 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:38 INFO 10.0.0.2 - - [06/Nov/2026 22:15:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:38 INFO WORK ok n=201 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:38 INFO 10.0.0.2 - - [06/Nov/2026 22:15:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:39 INFO WORK ok n=202 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:39 INFO 10.0.0.2 - - [06/Nov/2026 22:15:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:39 INFO WORK ok n=203 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:39 INFO 10.0.0.2 - - [06/Nov/2026 22:15:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:40 INFO WORK ok n=204 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:40 INFO 10.0.0.2 - - [06/Nov/2026 22:15:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:40 INFO WORK ok n=205 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:40 INFO 10.0.0.2 - - [06/Nov/2026 22:15:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:41 INFO WORK ok n=206 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:41 INFO 10.0.0.2 - - [06/Nov/2026 22:15:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:41 INFO WORK ok n=207 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:41 INFO 10.0.0.2 - - [06/Nov/2026 22:15:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:42 INFO 127.0.0.1 - - [06/Nov/2026 22:15:42] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:42 INFO WORK ok n=208 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:42 INFO 10.0.0.2 - - [06/Nov/2026 22:15:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:42 INFO WORK ok n=209 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:42 INFO 10.0.0.2 - - [06/Nov/2026 22:15:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:43 INFO WORK ok n=210 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:43 INFO 10.0.0.2 - - [06/Nov/2026 22:15:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:43 INFO WORK ok n=211 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:43 INFO 10.0.0.2 - - [06/Nov/2026 22:15:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:44 INFO WORK ok n=212 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:44 INFO 10.0.0.2 - - [06/Nov/2026 22:15:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:44 INFO WORK ok n=213 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:44 INFO 10.0.0.2 - - [06/Nov/2026 22:15:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:45 INFO WORK ok n=214 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:45 INFO 10.0.0.2 - - [06/Nov/2026 22:15:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:45 INFO WORK ok n=215 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:45 INFO 10.0.0.2 - - [06/Nov/2026 22:15:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:46 INFO WORK ok n=216 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:46 INFO 10.0.0.2 - - [06/Nov/2026 22:15:46] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:46 INFO WORK ok n=217 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:46 INFO 10.0.0.2 - - [06/Nov/2026 22:15:46] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:47 INFO 127.0.0.1 - - [06/Nov/2026 22:15:47] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:47 INFO WORK ok n=218 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:47 INFO 10.0.0.2 - - [06/Nov/2026 22:15:47] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:47 INFO WORK ok n=219 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:47 INFO 10.0.0.2 - - [06/Nov/2026 22:15:47] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:48 INFO WORK ok n=220 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:48 INFO 10.0.0.2 - - [06/Nov/2026 22:15:48] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:48 INFO WORK ok n=221 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:48 INFO 10.0.0.2 - - [06/Nov/2026 22:15:48] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:49 INFO WORK ok n=222 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:49 INFO 10.0.0.2 - - [06/Nov/2026 22:15:49] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:49 INFO WORK ok n=223 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:49 INFO 10.0.0.2 - - [06/Nov/2026 22:15:49] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:50 INFO WORK ok n=224 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:50 INFO 10.0.0.2 - - [06/Nov/2026 22:15:50] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:50 INFO WORK ok n=225 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:50 INFO 10.0.0.2 - - [06/Nov/2026 22:15:50] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:51 INFO WORK ok n=226 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:51 INFO 10.0.0.2 - - [06/Nov/2026 22:15:51] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:51 INFO WORK ok n=227 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:51 INFO 10.0.0.2 - - [06/Nov/2026 22:15:51] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:52 INFO 127.0.0.1 - - [06/Nov/2026 22:15:52] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:52 INFO WORK ok n=228 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:52 INFO 10.0.0.2 - - [06/Nov/2026 22:15:52] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:52 INFO WORK ok n=229 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:52 INFO 10.0.0.2 - - [06/Nov/2026 22:15:52] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:53 INFO WORK ok n=230 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:53 INFO 10.0.0.2 - - [06/Nov/2026 22:15:53] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:53 INFO WORK ok n=231 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:53 INFO 10.0.0.2 - - [06/Nov/2026 22:15:53] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:54 INFO WORK ok n=232 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:54 INFO 10.0.0.2 - - [06/Nov/2026 22:15:54] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:54 INFO WORK ok n=233 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:54 INFO 10.0.0.2 - - [06/Nov/2026 22:15:54] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:55 INFO WORK ok n=234 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:55 INFO 10.0.0.2 - - [06/Nov/2026 22:15:55] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:55 INFO WORK ok n=235 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:55 INFO 10.0.0.2 - - [06/Nov/2026 22:15:55] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:56 INFO WORK ok n=236 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:56 INFO 10.0.0.2 - - [06/Nov/2026 22:15:56] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:56 INFO WORK ok n=237 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:56 INFO 10.0.0.2 - - [06/Nov/2026 22:15:56] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:57 INFO WORK ok n=238 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:57 INFO 10.0.0.2 - - [06/Nov/2026 22:15:57] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:57 INFO 127.0.0.1 - - [06/Nov/2026 22:15:57] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:57 INFO WORK ok n=239 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:57 INFO 10.0.0.2 - - [06/Nov/2026 22:15:57] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:58 INFO WORK ok n=240 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:58 INFO 10.0.0.2 - - [06/Nov/2026 22:15:58] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:58 INFO WORK ok n=241 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:58 INFO 10.0.0.2 - - [06/Nov/2026 22:15:58] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:59 INFO WORK ok n=242 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:59 INFO 10.0.0.2 - - [06/Nov/2026 22:15:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:15:59 INFO WORK ok n=243 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:15:59 INFO 10.0.0.2 - - [06/Nov/2026 22:15:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:00 INFO WORK ok n=244 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:00 INFO 10.0.0.2 - - [06/Nov/2026 22:16:00] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:00 INFO WORK ok n=245 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:00 INFO 10.0.0.2 - - [06/Nov/2026 22:16:00] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:01 INFO WORK ok n=246 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:01 INFO 10.0.0.2 - - [06/Nov/2026 22:16:01] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:01 INFO WORK ok n=247 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:01 INFO 10.0.0.2 - - [06/Nov/2026 22:16:01] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:02 INFO WORK ok n=248 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:02 INFO 10.0.0.2 - - [06/Nov/2026 22:16:02] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:02 INFO 127.0.0.1 - - [06/Nov/2026 22:16:02] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:02 INFO WORK ok n=249 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:02 INFO 10.0.0.2 - - [06/Nov/2026 22:16:02] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:03 INFO WORK ok n=250 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:03 INFO 10.0.0.2 - - [06/Nov/2026 22:16:03] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:03 INFO WORK ok n=251 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:03 INFO 10.0.0.2 - - [06/Nov/2026 22:16:03] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:04 INFO WORK ok n=252 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:04 INFO 10.0.0.2 - - [06/Nov/2026 22:16:04] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:04 INFO WORK ok n=253 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:04 INFO 10.0.0.2 - - [06/Nov/2026 22:16:04] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:05 INFO WORK ok n=254 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:05 INFO 10.0.0.2 - - [06/Nov/2026 22:16:05] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:05 INFO WORK ok n=255 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:05 INFO 10.0.0.2 - - [06/Nov/2026 22:16:05] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:06 INFO WORK ok n=256 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:06 INFO 10.0.0.2 - - [06/Nov/2026 22:16:06] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:06 INFO WORK ok n=257 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:06 INFO 10.0.0.2 - - [06/Nov/2026 22:16:06] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:07 INFO WORK ok n=258 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:07 INFO 10.0.0.2 - - [06/Nov/2026 22:16:07] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:07 INFO 127.0.0.1 - - [06/Nov/2026 22:16:07] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:07 INFO WORK ok n=259 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:07 INFO 10.0.0.2 - - [06/Nov/2026 22:16:07] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:08 INFO WORK ok n=260 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:08 INFO 10.0.0.2 - - [06/Nov/2026 22:16:08] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:08 INFO WORK ok n=261 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:08 INFO 10.0.0.2 - - [06/Nov/2026 22:16:08] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:09 INFO WORK ok n=262 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:09 INFO 10.0.0.2 - - [06/Nov/2026 22:16:09] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:09 INFO WORK ok n=263 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:09 INFO 10.0.0.2 - - [06/Nov/2026 22:16:09] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:10 INFO WORK ok n=264 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:10 INFO 10.0.0.2 - - [06/Nov/2026 22:16:10] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:10 INFO WORK ok n=265 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:10 INFO 10.0.0.2 - - [06/Nov/2026 22:16:10] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:11 INFO WORK ok n=266 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:11 INFO 10.0.0.2 - - [06/Nov/2026 22:16:11] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:11 INFO WORK ok n=267 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:11 INFO 10.0.0.2 - - [06/Nov/2026 22:16:11] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:12 INFO WORK ok n=268 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:12 INFO 10.0.0.2 - - [06/Nov/2026 22:16:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:12 INFO 127.0.0.1 - - [06/Nov/2026 22:16:12] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:12 INFO WORK ok n=269 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:12 INFO 10.0.0.2 - - [06/Nov/2026 22:16:12] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:13 INFO WORK ok n=270 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:13 INFO 10.0.0.2 - - [06/Nov/2026 22:16:13] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:13 INFO WORK ok n=271 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:13 INFO 10.0.0.2 - - [06/Nov/2026 22:16:13] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:14 INFO WORK ok n=272 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:14 INFO 10.0.0.2 - - [06/Nov/2026 22:16:14] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:14 INFO WORK ok n=273 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:14 INFO 10.0.0.2 - - [06/Nov/2026 22:16:14] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:15 INFO WORK ok n=274 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:15 INFO 10.0.0.2 - - [06/Nov/2026 22:16:15] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:15 INFO WORK ok n=275 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:15 INFO 10.0.0.2 - - [06/Nov/2026 22:16:15] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:16 INFO WORK ok n=276 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:16 INFO 10.0.0.2 - - [06/Nov/2026 22:16:16] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:16 INFO WORK ok n=277 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:16 INFO 10.0.0.2 - - [06/Nov/2026 22:16:16] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:17 INFO WORK ok n=278 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:17 INFO 10.0.0.2 - - [06/Nov/2026 22:16:17] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:17 INFO 127.0.0.1 - - [06/Nov/2026 22:16:17] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:18 INFO WORK ok n=279 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:18 INFO 10.0.0.2 - - [06/Nov/2026 22:16:18] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:18 INFO WORK ok n=280 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:18 INFO 10.0.0.2 - - [06/Nov/2026 22:16:18] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:19 INFO WORK ok n=281 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:19 INFO 10.0.0.2 - - [06/Nov/2026 22:16:19] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:19 INFO WORK ok n=282 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:19 INFO 10.0.0.2 - - [06/Nov/2026 22:16:19] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:20 INFO WORK ok n=283 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:20 INFO 10.0.0.2 - - [06/Nov/2026 22:16:20] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:20 INFO WORK ok n=284 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:20 INFO 10.0.0.2 - - [06/Nov/2026 22:16:20] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:21 INFO WORK ok n=285 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:21 INFO 10.0.0.2 - - [06/Nov/2026 22:16:21] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:21 INFO WORK ok n=286 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:21 INFO 10.0.0.2 - - [06/Nov/2026 22:16:21] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:22 INFO WORK ok n=287 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:22 INFO 10.0.0.2 - - [06/Nov/2026 22:16:22] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:22 INFO WORK ok n=288 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:22 INFO 10.0.0.2 - - [06/Nov/2026 22:16:22] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:22 INFO 127.0.0.1 - - [06/Nov/2026 22:16:22] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:23 INFO WORK ok n=289 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:23 INFO 10.0.0.2 - - [06/Nov/2026 22:16:23] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:23 INFO WORK ok n=290 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:23 INFO 10.0.0.2 - - [06/Nov/2026 22:16:23] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:24 INFO WORK ok n=291 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:24 INFO 10.0.0.2 - - [06/Nov/2026 22:16:24] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:24 INFO WORK ok n=292 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:24 INFO 10.0.0.2 - - [06/Nov/2026 22:16:24] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:25 INFO WORK ok n=293 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:25 INFO 10.0.0.2 - - [06/Nov/2026 22:16:25] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:25 INFO WORK ok n=294 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:25 INFO 10.0.0.2 - - [06/Nov/2026 22:16:25] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:26 INFO WORK ok n=295 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:26 INFO 10.0.0.2 - - [06/Nov/2026 22:16:26] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:26 INFO WORK ok n=296 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:26 INFO 10.0.0.2 - - [06/Nov/2026 22:16:26] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:27 INFO WORK ok n=297 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:27 INFO 10.0.0.2 - - [06/Nov/2026 22:16:27] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:27 INFO WORK ok n=298 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:27 INFO 10.0.0.2 - - [06/Nov/2026 22:16:27] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:28 INFO 127.0.0.1 - - [06/Nov/2026 22:16:28] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:28 INFO WORK ok n=299 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:28 INFO 10.0.0.2 - - [06/Nov/2026 22:16:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:28 INFO WORK ok n=300 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:28 INFO 10.0.0.2 - - [06/Nov/2026 22:16:28] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:29 INFO WORK ok n=301 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:29 INFO 10.0.0.2 - - [06/Nov/2026 22:16:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:29 INFO WORK ok n=302 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:29 INFO 10.0.0.2 - - [06/Nov/2026 22:16:29] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:30 INFO WORK ok n=303 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:30 INFO 10.0.0.2 - - [06/Nov/2026 22:16:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:30 INFO WORK ok n=304 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:30 INFO 10.0.0.2 - - [06/Nov/2026 22:16:30] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:31 INFO WORK ok n=305 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:31 INFO 10.0.0.2 - - [06/Nov/2026 22:16:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:31 INFO WORK ok n=306 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:31 INFO 10.0.0.2 - - [06/Nov/2026 22:16:31] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:32 INFO WORK ok n=307 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:32 INFO 10.0.0.2 - - [06/Nov/2026 22:16:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:32 INFO WORK ok n=308 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:32 INFO 10.0.0.2 - - [06/Nov/2026 22:16:32] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:33 INFO 127.0.0.1 - - [06/Nov/2026 22:16:33] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:33 INFO WORK ok n=309 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:33 INFO 10.0.0.2 - - [06/Nov/2026 22:16:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:33 INFO WORK ok n=310 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:33 INFO 10.0.0.2 - - [06/Nov/2026 22:16:33] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:34 INFO WORK ok n=311 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:34 INFO 10.0.0.2 - - [06/Nov/2026 22:16:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:34 INFO WORK ok n=312 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:34 INFO 10.0.0.2 - - [06/Nov/2026 22:16:34] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:35 INFO WORK ok n=313 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:35 INFO 10.0.0.2 - - [06/Nov/2026 22:16:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:35 INFO WORK ok n=314 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:35 INFO 10.0.0.2 - - [06/Nov/2026 22:16:35] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:36 INFO WORK ok n=315 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:36 INFO 10.0.0.2 - - [06/Nov/2026 22:16:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:36 INFO WORK ok n=316 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:36 INFO 10.0.0.2 - - [06/Nov/2026 22:16:36] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:37 INFO WORK ok n=317 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:37 INFO 10.0.0.2 - - [06/Nov/2026 22:16:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:37 INFO WORK ok n=318 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:37 INFO 10.0.0.2 - - [06/Nov/2026 22:16:37] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:38 INFO WORK ok n=319 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:38 INFO 10.0.0.2 - - [06/Nov/2026 22:16:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:38 INFO 127.0.0.1 - - [06/Nov/2026 22:16:38] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:38 INFO WORK ok n=320 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:38 INFO 10.0.0.2 - - [06/Nov/2026 22:16:38] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:39 INFO WORK ok n=321 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:39 INFO 10.0.0.2 - - [06/Nov/2026 22:16:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:39 INFO WORK ok n=322 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:39 INFO 10.0.0.2 - - [06/Nov/2026 22:16:39] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:40 INFO WORK ok n=323 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:40 INFO 10.0.0.2 - - [06/Nov/2026 22:16:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:40 INFO WORK ok n=324 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:40 INFO 10.0.0.2 - - [06/Nov/2026 22:16:40] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:41 INFO WORK ok n=325 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:41 INFO 10.0.0.2 - - [06/Nov/2026 22:16:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:41 INFO WORK ok n=326 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:41 INFO 10.0.0.2 - - [06/Nov/2026 22:16:41] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:42 INFO WORK ok n=327 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:42 INFO 10.0.0.2 - - [06/Nov/2026 22:16:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:42 INFO WORK ok n=328 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:42 INFO 10.0.0.2 - - [06/Nov/2026 22:16:42] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:43 INFO WORK ok n=329 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:43 INFO 10.0.0.2 - - [06/Nov/2026 22:16:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:43 INFO 127.0.0.1 - - [06/Nov/2026 22:16:43] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:43 INFO WORK ok n=330 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:43 INFO 10.0.0.2 - - [06/Nov/2026 22:16:43] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:44 INFO WORK ok n=331 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:44 INFO 10.0.0.2 - - [06/Nov/2026 22:16:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:44 INFO WORK ok n=332 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:44 INFO 10.0.0.2 - - [06/Nov/2026 22:16:44] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:45 INFO WORK ok n=333 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:45 INFO 10.0.0.2 - - [06/Nov/2026 22:16:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:45 INFO WORK ok n=334 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:45 INFO 10.0.0.2 - - [06/Nov/2026 22:16:45] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:46 INFO WORK ok n=335 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:46 INFO 10.0.0.2 - - [06/Nov/2026 22:16:46] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:46 INFO WORK ok n=336 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:46 INFO 10.0.0.2 - - [06/Nov/2026 22:16:46] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:47 INFO WORK ok n=337 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:47 INFO 10.0.0.2 - - [06/Nov/2026 22:16:47] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:47 INFO WORK ok n=338 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:47 INFO 10.0.0.2 - - [06/Nov/2026 22:16:47] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:48 INFO WORK ok n=339 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:48 INFO 10.0.0.2 - - [06/Nov/2026 22:16:48] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:48 INFO 127.0.0.1 - - [06/Nov/2026 22:16:48] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:48 INFO WORK ok n=340 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:48 INFO 10.0.0.2 - - [06/Nov/2026 22:16:48] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:49 INFO WORK ok n=341 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:49 INFO 10.0.0.2 - - [06/Nov/2026 22:16:49] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:49 INFO WORK ok n=342 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:49 INFO 10.0.0.2 - - [06/Nov/2026 22:16:49] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:50 INFO WORK ok n=343 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:50 INFO 10.0.0.2 - - [06/Nov/2026 22:16:50] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:50 INFO WORK ok n=344 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:50 INFO 10.0.0.2 - - [06/Nov/2026 22:16:50] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:51 INFO WORK ok n=345 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:51 INFO 10.0.0.2 - - [06/Nov/2026 22:16:51] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:51 INFO WORK ok n=346 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:51 INFO 10.0.0.2 - - [06/Nov/2026 22:16:51] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:52 INFO WORK ok n=347 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:52 INFO 10.0.0.2 - - [06/Nov/2026 22:16:52] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:52 INFO WORK ok n=348 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:52 INFO 10.0.0.2 - - [06/Nov/2026 22:16:52] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:53 INFO WORK ok n=349 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:53 INFO 10.0.0.2 - - [06/Nov/2026 22:16:53] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:53 INFO 127.0.0.1 - - [06/Nov/2026 22:16:53] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:53 INFO WORK ok n=350 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:53 INFO 10.0.0.2 - - [06/Nov/2026 22:16:53] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:54 INFO WORK ok n=351 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:54 INFO 10.0.0.2 - - [06/Nov/2026 22:16:54] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:54 INFO WORK ok n=352 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:54 INFO 10.0.0.2 - - [06/Nov/2026 22:16:54] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:55 INFO WORK ok n=353 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:55 INFO 10.0.0.2 - - [06/Nov/2026 22:16:55] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:55 INFO WORK ok n=354 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:55 INFO 10.0.0.2 - - [06/Nov/2026 22:16:55] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:56 INFO WORK ok n=355 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:56 INFO 10.0.0.2 - - [06/Nov/2026 22:16:56] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:56 INFO WORK ok n=356 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:56 INFO 10.0.0.2 - - [06/Nov/2026 22:16:56] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:57 INFO WORK ok n=357 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:57 INFO 10.0.0.2 - - [06/Nov/2026 22:16:57] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:57 INFO WORK ok n=358 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:57 INFO 10.0.0.2 - - [06/Nov/2026 22:16:57] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:58 INFO WORK ok n=359 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:58 INFO 10.0.0.2 - - [06/Nov/2026 22:16:58] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:58 INFO 127.0.0.1 - - [06/Nov/2026 22:16:58] "GET /healthz HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:58 INFO WORK ok n=360 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:58 INFO 10.0.0.2 - - [06/Nov/2026 22:16:58] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:59 INFO WORK ok n=361 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:59 INFO 10.0.0.2 - - [06/Nov/2026 22:16:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:16:59 INFO WORK ok n=362 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:16:59 INFO 10.0.0.2 - - [06/Nov/2026 22:16:59] "GET /work HTTP/1.1" 200 -
+app_web.1@docker-desktop    | 2026-11-06T22:17:00 INFO WORK ok n=363 result=332833500
+app_web.1@docker-desktop    | 2026-11-06T22:17:00 INFO 10.0.0.2 - - [06/Nov/2026 22:17:00] "GET /work HTTP/1.1" 200 -

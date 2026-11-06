@@ -1,0 +1,107 @@
+# stack/mitigated.yml — the MITIGATED Swarm stack (Step 5).
+#
+# Same three services as stack/vulnerable.yml. Only two things change, and
+# they are the whole fix:
+#
+#   1. web uses iddos-app:fixed, whose HEALTHCHECK probes /healthz — a
+#      LOCAL-ONLY liveness check that never touches the database. A slow
+#      database no longer fails the health-check, so Swarm stops killing a
+#      healthy container.
+#   2. restart_policy is TUNED: max_attempts + a backoff window, so even a
+#      genuine failure cannot turn into an unbounded restart storm.
+#
+# Everything else (db, toxiproxy, network, ports) is identical to the
+# vulnerable stack, so the before/after comparison isolates the fix.
+#
+# Deploy from the iddos-swarm/ directory:
+#   docker stack deploy -c stack/mitigated.yml app
+version: "3.8"
+
+services:
+  # --------------------------------------------------------------------------
+  web:
+    image: iddos-app:fixed
+    environment:
+      DB_HOST: toxiproxy
+      DB_PORT: "5432"
+      DB_NAME: iddos
+      DB_USER: iddos
+      DB_PASSWORD: iddos
+      DB_TIMEOUT: "2"
+      APP_PORT: "8000"
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+        mode: ingress
+    networks:
+      - iddosnet
+    # FIXED health-check: LIVENESS only. Probes /healthz, which does NOT call
+    # the database. Stated here explicitly (mirrors the fixed image).
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/healthz', timeout=3).status==200 else 1)"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 3     # BOUNDED: at most 3 restarts within the window...
+        window: 60s         # ...then Swarm stops retrying (no storm)
+      update_config:
+        order: stop-first
+
+  # --------------------------------------------------------------------------
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: iddos
+      POSTGRES_USER: iddos
+      POSTGRES_PASSWORD: iddos
+    networks:
+      - iddosnet
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U iddos -d iddos"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+  # --------------------------------------------------------------------------
+  toxiproxy:
+    image: ghcr.io/shopify/toxiproxy:2.9.0
+    command: ["-host=0.0.0.0", "-config=/toxiproxy.json"]
+    configs:
+      - source: toxiproxy_config
+        target: /toxiproxy.json
+    ports:
+      - target: 8474
+        published: 8474
+        protocol: tcp
+        mode: ingress
+    networks:
+      - iddosnet
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+
+networks:
+  iddosnet:
+    driver: overlay
+
+volumes:
+  dbdata:
+
+configs:
+  toxiproxy_config:
+    file: ./toxiproxy.json

@@ -1,0 +1,220 @@
+ATTACK EVIDENCE RUN  start=2026-11-07T03:13:59  latency=5000ms
+web_restarts at start = 0
+
+===== 2026-11-07T03:13:59 phase=baseline web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE            ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 49 seconds ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 53 seconds ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 45 seconds ago             
+
+===== 2026-11-07T03:14:04 phase=baseline web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE            ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 54 seconds ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 58 seconds ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 50 seconds ago             
+
+===== 2026-11-07T03:14:09 phase=baseline web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 59 seconds ago                 
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 55 seconds ago                 
+
+===== 2026-11-07T03:14:14 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:14:19 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:14:24 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:14:30 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:14:35 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:14:40 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:14:45 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:14:50 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:14:55 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:15:00 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:15:05 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running about a minute ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running about a minute ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:15:11 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE                ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago                  
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago                  
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running about a minute ago             
+
+===== 2026-11-07T03:15:16 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:15:21 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:15:26 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:15:31 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:15:36 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:15:41 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:15:46 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:15:52 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:15:57 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:16:02 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 2 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:16:07 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 2 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:16:12 phase=attack web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 2 minutes ago             
+
+===== 2026-11-07T03:16:15 phase=recovery web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 3 minutes ago             
+
+===== 2026-11-07T03:16:20 phase=recovery web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 3 minutes ago             
+
+===== 2026-11-07T03:16:25 phase=recovery web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 3 minutes ago             
+
+===== 2026-11-07T03:16:30 phase=recovery web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 3 minutes ago             
+
+===== 2026-11-07T03:16:35 phase=recovery web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 3 minutes ago             
+
+===== 2026-11-07T03:16:40 phase=recovery web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 3 minutes ago             
+
+===== 2026-11-07T03:16:46 phase=recovery web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 3 minutes ago             
+
+===== 2026-11-07T03:16:51 phase=recovery web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 3 minutes ago             
+
+===== 2026-11-07T03:16:56 phase=recovery web_restarts=0 =====
+ID                          NAME              IMAGE                                                                                                     NODE             DESIRED STATE   CURRENT STATE           ERROR     PORTS
+px2ci2joc8v2wbifb36rptzxa   app_db.1          postgres:16@sha256:933463a6c8eba2b9f5cd414138738cd8d5519cd2c471214c222652f547a66a32                       docker-desktop   Running         Running 3 minutes ago             
+hpcucw6jmv8ot617m0p73gkvh   app_toxiproxy.1   ghcr.io/shopify/toxiproxy:2.9.0@sha256:b44c283298cea49e2defaba1b3028783798346f2a926684e3a345fd8441af3b8   docker-desktop   Running         Running 3 minutes ago             
+j0nrhii4h8dfxcx5f8f4oy579   app_web.1         iddos-app:fixed                                                                                           docker-desktop   Running         Running 3 minutes ago             
+
+web_restarts at end = 0

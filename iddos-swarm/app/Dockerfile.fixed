@@ -1,0 +1,30 @@
+# iddos-app:fixed — the MITIGATED image (Step 5).
+#
+# Identical application code to the vulnerable image. The ONLY difference is
+# the HEALTHCHECK target: it probes /healthz, a local-only liveness endpoint
+# that does NOT touch the database. A slow dependency therefore can no longer
+# flip the container to "unhealthy", so Swarm no longer restarts a healthy
+# process. This is the core fix: process health is separated from dependency
+# health.
+
+FROM python:3.12-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    APP_PORT=8000
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY app.py .
+
+EXPOSE 8000
+
+# --- The FIXED health-check (liveness only) --------------------------------
+# Probes /healthz (no database). The timings match the vulnerable image so the
+# before/after comparison isolates the single change: the probe target.
+HEALTHCHECK --interval=5s --timeout=3s --retries=3 --start-period=10s \
+    CMD python -c "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/healthz', timeout=3).status==200 else 1)" || exit 1
+
+CMD ["python", "app.py"]

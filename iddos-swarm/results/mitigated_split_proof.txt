@@ -1,0 +1,22 @@
+Liveness/readiness split under latency (mitigated stack, iddos-app:fixed)
+Generated 2026-11-07T03:17:24
+
+--- add 5000ms latency toxic ---
+toxic added
+
+During the latency attack:
+  /healthz -> HTTP 200
+  /ready -> HTTP 503
+  /work -> HTTP 200
+
+  -> /healthz stays 200 (liveness, no DB) => Swarm keeps the container
+  -> /ready    returns 503 (readiness, DB slow) => would leave rotation
+  -> /work     stays 200 (app logic never needed the DB)
+
+--- remove toxic ---
+ATTACK OFF toxic 'latency_downstream' removed from proxy 'postgres'
+
+web container status after attack (never killed):
+iddos-app:fixed  Up 4 minutes (healthy)
+web restarts in history:
+  shutdown tasks = 0
