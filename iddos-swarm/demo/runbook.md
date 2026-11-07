@@ -15,6 +15,23 @@ A repeatable 8–10 minute live demo: show the problem, then the fix.
 
 All commands are run from the `iddos-swarm/` directory.
 
+> **Windows PowerShell users:** use the `.ps1` scripts instead of `.sh`
+> (`.sh` needs a POSIX shell). The commands below show the `.sh` form; the
+> PowerShell equivalents are:
+>
+> | Bash | PowerShell |
+> | --- | --- |
+> | `./demo/reset.sh` | `.\demo\reset.ps1` |
+> | `./demo/reset.sh mitigated` | `.\demo\reset.ps1 mitigated` |
+> | `OBS=0 ./demo/reset.sh` | `.\demo\reset.ps1 vuln -NoDashboard` |
+> | `./demo/attack.sh` / `./demo/attack.sh off` | `.\demo\attack.ps1` / `.\demo\attack.ps1 off` |
+> | `./demo/fix.sh` | `.\demo\fix.ps1` |
+> | `./demo/detect.sh` | `.\demo\detect.ps1` |
+>
+> If PowerShell blocks the scripts ("running scripts is disabled"), allow them
+> for this session only: `Set-ExecutionPolicy -Scope Process Bypass`.
+> You can also run the `.sh` versions through Git Bash: `bash demo/reset.sh`.
+
 ## The run
 
 **1. Clean start — vulnerable stack + dashboard (~30 s to healthy)**
