@@ -391,23 +391,14 @@ detection threshold.
 
 \section{References}
 
-\textbf{Container orchestration}
-\begin{enumerate}[nosep]
-\item Docker Inc. (2024). \emph{Configure healthchecks in Docker Swarm.} Docker Documentation.
-\item Burns, B., Grant, B., Oppenheimer, D., Brewer, E., \& Wilkes, J. (2016). \emph{Borg, Omega, and Kubernetes.} ACM Queue, 14(1).
-\end{enumerate}
-
-\textbf{DoS / availability attacks}
-\begin{enumerate}[nosep,start=3]
-\item Carl, G., Kesidis, G., Brooks, R. R., \& Rai, S. (2006). \emph{Denial-of-Service Attack-Detection Techniques.} IEEE Internet Computing, 10(1).
-\item Peng, T., Leckie, C., \& Ramamohanarao, K. (2007). \emph{Survey of network-based defense mechanisms countering the DoS and DDoS problems.} ACM Computing Surveys, 39(1).
-\end{enumerate}
-
-\textbf{Microservice \& cascade failures}
-\begin{enumerate}[nosep,start=5]
-\item Newman, S. (2021). \emph{Building Microservices: Designing Fine-Grained Systems}, 2nd ed. O'Reilly Media.
-\item Richardson, C. (2019). \emph{Microservices Patterns.} Manning Publications. (Chapter on circuit breakers.)
-\item Aceto, G., Botta, A., Marchetta, P., Persico, V., \& Pescap\`{e}, A. (2018). \emph{Cloud monitoring: A survey.} Computer Networks, 57(9).
+\begin{enumerate}[label={[\arabic*]},leftmargin=2.4em,labelsep=0.4em,itemsep=4pt]
+\item Docker Inc., ``Dockerfile reference: HEALTHCHECK,'' \emph{Docker Documentation}, 2024. [Online]. Available: \url{https://docs.docker.com/reference/dockerfile/#healthcheck} (accessed Nov.~8, 2026).
+\item B. Burns, B. Grant, D. Oppenheimer, E. Brewer, and J. Wilkes, ``Borg, Omega, and Kubernetes,'' \emph{ACM Queue}, vol.~14, no.~1, pp.~70--93, Jan.~2016.
+\item G. Carl, G. Kesidis, R. R. Brooks, and S. Rai, ``Denial-of-service attack-detection techniques,'' \emph{IEEE Internet Comput.}, vol.~10, no.~1, pp.~82--89, Jan.--Feb.~2006.
+\item T. Peng, C. Leckie, and K. Ramamohanarao, ``Survey of network-based defense mechanisms countering the DoS and DDoS problems,'' \emph{ACM Comput. Surv.}, vol.~39, no.~1, Apr.~2007, Art.~no.~3.
+\item S. Newman, \emph{Building Microservices: Designing Fine-Grained Systems}, 2nd ed. Sebastopol, CA, USA: O'Reilly Media, 2021.
+\item C. Richardson, \emph{Microservices Patterns: With Examples in Java}. Shelter Island, NY, USA: Manning, 2019.
+\item G. Aceto, A. Botta, W. de Donato, and A. Pescap\`{e}, ``Cloud monitoring: A survey,'' \emph{Comput. Netw.}, vol.~57, no.~9, pp.~2093--2115, Jun.~2013.
 \end{enumerate}
 
 \appendix
@@ -430,19 +421,5 @@ python load/make_charts.py
 .\demo\attack.ps1         # start the attack;  .\demo\attack.ps1 off to stop
 .\demo\fix.ps1            # switch to the mitigated stack
 \end{lstlisting}
-
-\section{Additional Dashboard Views}
-
-\figurewide{grafana_baseline_bottom.png}{Baseline dashboard (lower panels):
-\texttt{/work} request rate, health-check pass/fail, and DB probe
-latency.}{fig:basebottom}
-
-\figurewide{grafana_attack_bottom.png}{During the attack (lower panels): the
-health-check \emph{fail} series appears and DB probe latency spikes toward the
-injected delay.}{fig:attackbottom}
-
-\figurewide{term_teardown.png}{Teardown: \texttt{attack.ps1 off} followed by
-\texttt{docker stack rm app} removes all services, configs and the overlay
-network.}{fig:teardown}
 
 \end{document}

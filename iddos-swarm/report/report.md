@@ -265,18 +265,19 @@ detection threshold.
 
 ## 11. References
 
-**Container orchestration**
-1. Docker Inc. (2024). *Configure healthchecks in Docker Swarm.* Docker Documentation.
-2. Burns, B., Grant, B., Oppenheimer, D., Brewer, E., & Wilkes, J. (2016). *Borg, Omega, and Kubernetes.* ACM Queue, 14(1).
+[1] Docker Inc., "Dockerfile reference: HEALTHCHECK," *Docker Documentation*, 2024. [Online]. Available: https://docs.docker.com/reference/dockerfile/#healthcheck (accessed Nov. 8, 2026).
 
-**DoS / availability attacks**
-3. Carl, G., Kesidis, G., Brooks, R. R., & Rai, S. (2006). *Denial-of-Service Attack-Detection Techniques.* IEEE Internet Computing, 10(1).
-4. Peng, T., Leckie, C., & Ramamohanarao, K. (2007). *Survey of network-based defense mechanisms countering the DoS and DDoS problems.* ACM Computing Surveys, 39(1).
+[2] B. Burns, B. Grant, D. Oppenheimer, E. Brewer, and J. Wilkes, "Borg, Omega, and Kubernetes," *ACM Queue*, vol. 14, no. 1, pp. 70–93, Jan. 2016.
 
-**Microservice & cascade failures**
-5. Newman, S. (2021). *Building Microservices: Designing Fine-Grained Systems*, 2nd ed. O'Reilly Media.
-6. Richardson, C. (2019). *Microservices Patterns.* Manning Publications. (Chapter on circuit breakers.)
-7. Aceto, G., Botta, A., Marchetta, P., Persico, V., & Pescapè, A. (2018). *Cloud monitoring: A survey.* Computer Networks, 57(9).
+[3] G. Carl, G. Kesidis, R. R. Brooks, and S. Rai, "Denial-of-service attack-detection techniques," *IEEE Internet Comput.*, vol. 10, no. 1, pp. 82–89, Jan.–Feb. 2006.
+
+[4] T. Peng, C. Leckie, and K. Ramamohanarao, "Survey of network-based defense mechanisms countering the DoS and DDoS problems," *ACM Comput. Surv.*, vol. 39, no. 1, Apr. 2007, Art. no. 3.
+
+[5] S. Newman, *Building Microservices: Designing Fine-Grained Systems*, 2nd ed. Sebastopol, CA, USA: O'Reilly Media, 2021.
+
+[6] C. Richardson, *Microservices Patterns: With Examples in Java*. Shelter Island, NY, USA: Manning, 2019.
+
+[7] G. Aceto, A. Botta, W. de Donato, and A. Pescapè, "Cloud monitoring: A survey," *Comput. Netw.*, vol. 57, no. 9, pp. 2093–2115, Jun. 2013.
 
 ---
 
